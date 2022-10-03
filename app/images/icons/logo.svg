@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="Path 324.svg"
+   id="svg192"
+   height="38.900002"
+   width="151.73242"
+   viewBox="0 0 151.73242 38.900002"
+   version="1.2">
+  <metadata
+     id="metadata198">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Path 324</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs196" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg192"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:cy="59.026943"
+     inkscape:cx="142.03106"
+     inkscape:zoom="3.2436895"
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     showgrid="false"
+     id="namedview194"
+     inkscape:window-height="1018"
+     inkscape:window-width="1920"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <title
+     id="title184">Path 324</title>
+  <style
+     id="style186">
+		tspan { white-space:pre } 
+		.s0 { fill: #a3bbc8 } 
+		.t1 { font-size: 36px;line-height: 58px;fill: #436372;font-weight: 500;font-family: &quot;Rubik-Medium&quot;, &quot;Rubik&quot; } 
+	</style>
+  <path
+     d="m 0.1,27.78889 c 0.1,-0.2 6.4,-12.9 6.6,-13.2 0.1,-0.4 0.3,-0.4 0.5,-0.5 L 42.4,0.0888888 c 0,0 0.5,-0.1999998 0.9,0 0.4,0.3 0.5,0.7 0.5,0.7 L 50,37.78889 c 0,0 0.1,0.5 -0.3,0.8 -0.4,0.4 -0.9,0.3 -0.9,0.3 l -48,-9.8 c 0,0 -0.4,-0.1 -0.6,-0.4 -0.3,-0.3 -0.2,-0.7 -0.1,-0.9 z m 35.9,-6 -10.3,2.2 20,11.1 z m -33.3,5.1 17.9,-3.7 -12.5,-7 z m 20.5,-4.3 12.4,-2.5 L 41.2,2.4888889 9.6000002,15.08889 Z M 42.4,5.0888893 37.5,20.58889 47.3,33.988891 Z M 22.8,24.48889 l -17.5,3.6 38.1,7.800001 z"
+     class="s0"
+     fill-rule="evenodd"
+     id="Path 324" />
+  <text
+     y="32.870899"
+     x="61.978516"
+     id="Glee."><tspan
+       id="tspan189"
+       class="t1"
+       y="32.870899"
+       x="61.978516">Glee.
+</tspan></text>
+</svg>

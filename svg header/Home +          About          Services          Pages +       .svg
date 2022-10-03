@@ -1,0 +1,17 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 486 15" width="486" height="15">
+	<title>Header</title>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 15px;line-height: 12px;fill: #436372;font-weight: 500;font-family: "Rubik-Medium", "Rubik" } 
+	</style>
+	<g id="Header">
+		<g id="Menu head">
+			<g id="Menu">
+				<text id="Home +          About          Services          Pages +       " style="transform: matrix(1,0,0,1,-1,11)" >
+					<tspan x="0" y="0" class="t0">Home +          About          Services          Pages +          News          Contact
+</tspan>
+				</text>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,79 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+.header{
+    padding: 50px 0;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.menu{
+    &__list{
+        display: flex;
+    }
+    &__list-item + .menu__list-item{
+        padding-left: 32px;
+    }
+    &__list-link{
+        @extend %rubik-500;
+        font-size: 15px;
+        line-height: 12px;
+        color: #436372;
+    }
+}
+
+.user-nav{
+    display: flex;
+    align-items: center;
+    &__item + .user-nav__item{
+        margin-left: 20px;
+    }
+    &__purchase{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 178px;
+        height: 51px;
+        background-color: #fbd7b5;
+        border-radius: 26px;
+    }
+
+    &__wishlist,
+    &__cart{
+        position: relative;
+        padding: 8px 34px;
+    }
+
+    &__cart{
+        border-left: 1px solid #fde7d3;
+    }
+
+    &__num{
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 0;
+        right: 25px;
+        border-radius: 50%;
+        background-color: #fff;
+        @extend %dmsans-400;
+        font-size: 10px;
+        line-height: 16px;
+        color: #243f4d;
+        text-align: center;
+    }
+    
+    &__search{
+        background-color: #edf1f4;
+        padding: 17px;
+        border-radius: 50%;
+    }
+}
+
+
+@import 'media';
