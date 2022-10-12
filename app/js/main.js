@@ -1,11 +1,18 @@
-$(function(){
-    $('.top-slider__inner').slick({
-        dots: true,
-        arrows: false,
-        fade: true,
-        autoplay: true,
-        autoplaySpeed: 2000
-    });
+$(function () {
+  $('.top-slider__inner').slick({
+    dots: true,
+    arrows: false,
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 2000
+  });
 
-    var mixer = mixitup('.products__content');
+  var config = {
+    controls: {
+      scope: 'local'
+    }
+  };
+
+  var mixer1 = mixitup('.products', config);
+  var mixer2 = mixitup('.new-design', config);
 });
