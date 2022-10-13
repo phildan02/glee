@@ -83,6 +83,8 @@
 
 
 .footer {
+    padding-top: 120px;
+
     &__partners {
         width: 100%;
         padding: 262px 0 90px;
@@ -351,6 +353,7 @@
         color: #8b8b8b;
         cursor: pointer;
     }
+
     &__btn+.filter__btn {
         margin-left: 27px;
     }
@@ -366,9 +369,11 @@
     &__title {
         margin-bottom: 40px;
     }
-    &__filter{
+
+    &__filter {
         margin-bottom: 115px;
     }
+
     &__content {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
@@ -542,9 +547,11 @@
     &__title {
         margin-bottom: 40px;
     }
-    &__filter{
+
+    &__filter {
         margin-bottom: 75px;
     }
+
     &__content {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
@@ -587,30 +594,35 @@
             left: 102px;
         }
     }
+
     &:nth-child(2) {
         img {
             bottom: 35px;
             left: 106px;
         }
     }
+
     &:nth-child(3) {
         img {
             bottom: 45px;
             right: 56px;
         }
     }
+
     &:nth-child(4) {
         img {
             bottom: 26px;
             left: 102px;
         }
     }
+
     &:nth-child(5) {
         img {
             bottom: 25px;
             right: 30px;
         }
     }
+
     &:nth-child(6) {
         img {
             bottom: 30px;
@@ -620,7 +632,7 @@
 }
 
 
-.video{
+.video {
     height: 500px;
     background-image: url(../images/video.png);
     background-repeat: no-repeat;
@@ -629,6 +641,134 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.blog {
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 54px;
+    }
+
+    &__link-inner {
+        height: 24px;
+        padding-top: 8px;
+    }
+
+    &__link {
+        padding-top: 3px;
+        @extend %dmsans-700;
+        font-size: 16px;
+        line-height: 1;
+        color: #262626;
+        display: block;
+        height: 16px;
+    }
+
+    &__link-arrow {
+        display: inline;
+        margin-left: 15px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: -170px;
+    }
+
+    &__item+.blog__item {
+        margin-left: 30px;
+    }
+
+    &__item {
+        max-width: 370px;
+        height: 420px;
+        position: relative;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    &__item-imglink {
+        display: block;
+        margin-bottom: 32px;
+
+        img {
+            height: 250px;
+            object-fit: cover;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+    }
+
+    &__item-type {
+        position: absolute;
+        left: 28px;
+        top: 235px;
+        width: 103px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: #a3bbc8;
+        text-align: center;
+        @extend %dmsans-700;
+        font-size: 14px;
+        line-height: 30px;
+        color: #fff;
+    }
+
+    &__item-info {
+        max-width: 315px;
+        margin: 0 auto;
+    }
+
+    &__item-title {
+        @extend %dmsans-500;
+        font-size: 18px;
+        color: #262626;
+        padding: 0 4px 12px;
+        border-bottom: 1px solid #e0e0e0;
+        margin-bottom: 14px;
+        height: 85px;
+    }
+
+    &__item-date {
+        display: inline;
+        margin-left: 21px;
+        margin-right: 46px;
+        @extend %dmsans-500;
+        font-size: 12px;
+        color: #222933;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: -15px;
+            top: 1px;
+            background-image: url(../images/icons/calendar.svg);
+            background-size: cover;
+            width: 12px;
+            height: 12px;
+        }
+    }
+
+    &__item-author {
+        @extend %dmsans-500;
+        font-size: 12px;
+        color: #222933;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: -15px;
+            top: 1px;
+            background-image: url(../images/icons/author.svg);
+            background-size: cover;
+            width: 12px;
+            height: 12px;
+        }
+    }
 }
 
 
