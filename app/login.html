@@ -7,6 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glee</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <style>
+        .blog{
+            display: none;
+        }
+        .footer{
+            padding-top: 0;
+        }
+        .footer__partners{
+            padding-top: 76px;
+        }
+    </style>
 </head>
 
 <body>
@@ -75,6 +86,27 @@
                     </li>
                 </ul>
             </div>
+        </section>
+
+        <section class="modal">
+            <form class="modal__form" action="#">
+                <label class="modal__label">
+                    Username or email address *
+                    <input class="modal__input" type="text" required>
+                </label>
+                <label class="modal__label">
+                    Password *
+                    <input class="modal__input" type="password" required>
+                </label>
+                <button class="modal__login-btn" type="submit">Login</button>
+                <label class="modal__label">
+                    <input type="checkbox">
+                    Remember me
+                </label>
+                <a class="modal__error" href="#">Lost your password?</a>
+                <label class="modal__question">Not registered? No problem</label>
+                <button class="modal__register-btn" type="submit">Create an account</button>
+            </form>
         </section>
 
     </main>

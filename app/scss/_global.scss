@@ -32,3 +32,25 @@ a{
     font-size: 36px;
     color: #191919;
 }
+
+.breadcrumbs{
+    display: inline-flex;
+    &__list{
+        display: flex;
+    }
+    &__item{
+        color: #737980;
+        &::after{
+            content: "/";
+            padding: 0 5px;
+        }
+        &:last-child{
+            &::after{
+                display: none;
+            }
+        }
+    }
+    &__link{
+        color: inherit;
+    }
+}
