@@ -5,16 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glee</title>
+    <title>Product list</title>
     <link rel="stylesheet" href="css/style.min.css">
     <style>
-        .blog{
+        .blog {
             display: none;
         }
-        .footer{
-            padding-top: 0;
-        }
-        .footer__partners{
+        .footer__partners {
             padding-top: 76px;
         }
     </style>
@@ -92,14 +89,62 @@
             <div class="container">
                 <div class="product-list__inner">
                     <div class="product-list__filters filter">
-                        
+
                         <div class="filter__item filter-category">
-                            <h3 class="filter__title">CATEGORY</h3>
-                            <input class="filter-category__input" type="checkbox">
-                            <div class="filter-category__checkbox">
-                                <span>Chair</span>
-                                <img class="filter-category__arrow" src="" alt="filter arrow">
-                            </div>
+                            <h3 class="filter__title filter-category__title">CATEGORY</h3>
+                            <form class="filter-category__form" action="#">
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__checkbox">
+                                        <span>Chair</span>
+                                        <img class="filter-category__arrow" src="images/icons/filter-arrow.svg" alt="filter arrow">
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__checkbox">
+                                        <span>Table</span>
+                                        <img class="filter-category__arrow" src="images/icons/filter-arrow.svg" alt="filter arrow">
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__checkbox">
+                                        <span>Lamp</span>
+                                        <img class="filter-category__arrow" src="images/icons/filter-arrow.svg" alt="filter arrow">
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__checkbox">
+                                        <span>Watch</span>
+                                        <img class="filter-category__arrow" src="images/icons/filter-arrow.svg" alt="filter arrow">
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__checkbox">
+                                        <span>Clock</span>
+                                        <img class="filter-category__arrow" src="images/icons/filter-arrow.svg" alt="filter arrow">
+                                    </div>
+                                </label>
+                            </form>
+                        </div>
+
+                        <div class="filter__item filter-price">
+                            <h3 class="filter__title">PRICE</h3>
+                            <form class="filter-price__form" action="#">
+                                <input class="filter-price__input" type="text"
+                                data-min="100.00"
+                                data-max="500.00"
+                                data-from="200.00"
+                                data-to="300.00"
+                                >
+                                <div class="minmax-price">
+                                    <span class="min-price">$100.00</span>
+                                    <span class="max-price">$500.00</span>  
+                                </div>
+                            </form>
                         </div>
 
                     </div>
@@ -140,7 +185,8 @@
                         </a>
                         <div class="blog__item-type">NEWS</div>
                         <div class="blog__item-info">
-                            <h4 class="blog__item-title">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</h4>
+                            <h4 class="blog__item-title">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore</h4>
                             <div class="blog__item-date">28 JANUARY, 2020</div>
                             <a class="blog__item-author" href="#">BY ADMIN</a>
                         </div>

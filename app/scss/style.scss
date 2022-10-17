@@ -83,7 +83,7 @@
 
 
 .footer {
-    padding-top: 120px;
+    margin-top: 120px;
 
     &__partners {
         width: 100%;
@@ -199,11 +199,13 @@
 }
 
 
-.top{
+.top {
     background-color: #edf1f4;
     padding: 33px 0;
     text-align: center;
-    &__title{
+    margin-bottom: 120px;
+
+    &__title {
         @extend %rubik-300;
         font-size: 36px;
         color: #222933;
@@ -354,7 +356,7 @@
 }
 
 
-.filter {
+.mixfilter {
     text-align: center;
 
     &__btn {
@@ -367,7 +369,7 @@
         cursor: pointer;
     }
 
-    &__btn+.filter__btn {
+    &__btn+.mixfilter__btn {
         margin-left: 27px;
     }
 }
@@ -700,7 +702,7 @@
         position: relative;
         background-color: #fff;
         border-radius: 5px;
-        box-shadow: 0px 6px 25px rgba(37,37,37,0.05);
+        box-shadow: 0px 6px 25px rgba(37, 37, 37, 0.05);
     }
 
     &__item-imglink {
@@ -787,17 +789,18 @@
 }
 
 
-.modal{
-    margin: 120px auto;
+.modal {
+    margin: 0 auto;
     max-width: 470px;
-    
-    &__label{
+
+    &__label {
         @extend %rubik-400;
         color: #436372;
         display: block;
         margin-bottom: 16px;
     }
-    &__input{
+
+    &__input {
         display: block;
         width: 100%;
         height: 60px;
@@ -805,7 +808,8 @@
         border: none;
         font-size: 20px;
     }
-    &__login-btn{
+
+    &__login-btn {
         width: 100%;
         border: none;
         background-color: #a3bbc8;
@@ -817,28 +821,33 @@
         margin-bottom: 28px;
         cursor: pointer;
     }
-    &__remember{
+
+    &__remember {
         display: inline-block;
         width: 50%;
         color: #436372;
-        input{
+
+        input {
             margin: 0 8px 0 0;
         }
     }
-    &__error{
+
+    &__error {
         display: inline-block;
         width: 49%;
         color: #436372;
         text-align: right;
     }
-    &__question{
+
+    &__question {
         display: block;
         margin: 48px 0 16px;
         text-align: center;
         @extend %rubik-400;
         color: #436372;
     }
-    &__register-btn{
+
+    &__register-btn {
         width: 100%;
         border: 2px solid #a3bbc8;
         background-color: #fff;
@@ -852,8 +861,144 @@
 }
 
 
+.product-list {
+    &__inner {
+        display: flex;
+    }
+
+    &__filters {
+        width: 270px;
+        margin-right: 30px;
+    }
+}
+
+.filter {
+    &__item {
+        margin-bottom: 65px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        @extend %dmsans-700;
+        font-size: 18px;
+        line-height: 1;
+        color: #243f4d;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            width: 38px;
+            height: 2px;
+            border-radius: 1px;
+            background-color: #a3bbc8;
+            margin-left: 17px;
+        }
+    }
+}
+
+.filter-category {
+    &__title{
+        margin-bottom: 38px;
+    }
+    &__label {
+        display: block;
+        margin-bottom: 2px;
+        cursor: pointer;
+    }
+
+    &__input {
+        @extend %checkbox-hidden;
+
+        &:checked+.filter-category__checkbox {
+            background-color: #edf1f4;
+        }
+    }
+
+    &__checkbox {
+        padding: 13px 22px 13px 15px;
+        border-radius: 5px;
+        font-size: 16px;
+        line-height: 1;
+        color: #243f4d;
+        display: flex;
+        justify-content: space-between;
+    }
+}
 
 
+.irs-from,
+.irs-to,
+.irs-single{
+    display: none;
+}
+
+.irs--flat{
+    .irs{
+        .irs-line{
+            height: 2px;
+            background-color: #c2d2db;
+            border-radius: 1px;
+            top: 0;
+        }
+        .irs-min,
+        .irs-max{
+            top: 32px;
+            padding: 0;
+            background-color: transparent;
+            @extend %rubik-400;
+            font-size: 14px;
+            line-height: 1;
+            color: #243f4d;
+            visibility: visible !important;
+            // display: none;
+        }
+    }
+
+    .irs-bar{
+        top: -0.5px;
+        height: 3px;
+        background-color: #a3bbc8;
+    }
+
+    .irs-handle{
+        top: -6.5px;
+        width: 15px;
+        height: 15px;
+        i:first-child{
+            background-color: #a3bbc8;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            margin: 0;
+        }
+        &:hover{
+            i:first-child{
+                background-color: #a3bbc8;
+            }
+        }
+        &.state_hover{
+            i:first-child{
+                background-color: #a3bbc8;
+            }
+        }
+    }
+}
+
+.minmax-price{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 1;
+    color: #243f4d;
+    margin-top: -7px;
+    display: none;
+}
 
 
 
