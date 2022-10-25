@@ -1037,6 +1037,47 @@
 }
 
 
+.star{
+    padding: 0;
+    align-self: center;
+    width: 85px !important;
+}
+
+.jq-ry-group{
+    svg{
+        margin-right: 6.25px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+.filter-recent{
+    &__item{
+        height: 70px;
+        margin-bottom: 26px;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 90px 1fr;
+    }
+    &__img{
+        grid-area: 1 / 1 / 4 / 2;
+        align-self: center;
+        justify-self: center;
+        padding-right: 15px;
+    }
+    &__name{
+        line-height: 1;
+        color: #333333;
+        align-self: center;
+    }
+    &__price{
+        font-size: 15px;
+        line-height: 1;
+        color: #333333;
+        align-self: flex-end;
+    }
+}
 
 
 

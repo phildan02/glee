@@ -21,4 +21,9 @@ $(function () {
 
   var mixer1 = mixitup('.products', config);
   var mixer2 = mixitup('.new-design', config);
+
+});
+
+$(function () {
+  
 });
