@@ -25,8 +25,14 @@ $(function () {
 });
 
 $(function () {
-  $(".star").rateYo({
+  $(".filter-recent__star").rateYo({
     starWidth: "12px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    readOnly: true
+  });
+  $(".products-item-detail__star").rateYo({
+    starWidth: "18px",
     normalFill: "#d6d6d6",
     ratedFill: "#ffcc00",
     readOnly: true
