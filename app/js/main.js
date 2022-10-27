@@ -31,10 +31,26 @@ $(function () {
     ratedFill: "#ffcc00",
     readOnly: true
   });
+
   $(".products-item-detail__star").rateYo({
     starWidth: "18px",
     normalFill: "#d6d6d6",
     ratedFill: "#ffcc00",
     readOnly: true
   });
+
+  $('.product-slide__thumb').slick({
+    asNavFor: '.product-slide__big',
+    focusOnSelect: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    vertical: true,
+    draggable: false
+  });
+
+  $('.product-slide__big').slick({
+    asNavFor: '.product-slide__thumb',
+    draggable: false
+  });
+
 });
