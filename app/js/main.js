@@ -39,6 +39,13 @@ $(function () {
     readOnly: true
   });
 
+  $(".product-one__star").rateYo({
+    starWidth: "18px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    readOnly: true
+  });
+
   $('.product-slide__thumb').slick({
     asNavFor: '.product-slide__big',
     focusOnSelect: true,
@@ -50,7 +57,9 @@ $(function () {
 
   $('.product-slide__big').slick({
     asNavFor: '.product-slide__thumb',
-    draggable: false
+    draggable: false,
+    arrows: false,
+    fade: true
   });
 
 });
