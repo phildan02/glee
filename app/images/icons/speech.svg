@@ -8,11 +8,11 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="letter.svg"
+   sodipodi:docname="speech.svg"
    id="svg7"
-   height="12.4"
+   height="14.8"
    width="18"
-   viewBox="0 0 18 12.4"
+   viewBox="0 0 18 14.8"
    version="1.2">
   <metadata
      id="metadata13">
@@ -32,9 +32,9 @@
      inkscape:window-maximized="1"
      inkscape:window-y="-8"
      inkscape:window-x="-8"
-     inkscape:cy="6.7603162"
-     inkscape:cx="17.729504"
-     inkscape:zoom="16.833149"
+     inkscape:cy="12.783257"
+     inkscape:cx="25.4561"
+     inkscape:zoom="11.902834"
      showgrid="false"
      id="namedview9"
      inkscape:window-height="1018"
@@ -48,14 +48,14 @@
      bordercolor="#666666"
      pagecolor="#ffffff" />
   <title
-     id="title2">Shape 2</title>
+     id="title2">Shape 3</title>
   <style
      id="style4">
 		.s0 { fill: #436372 } 
 	</style>
   <path
-     d="M 16.7,12.4 H 1.3 C 0.9,12.4 0.6,12.3 0.4,12 q 0,0 0,0 0,0 0,0 C 0.1,11.8 0,11.5 0,11.2 V 1.3 C 0,0.6 0.6,0 1.3,0 H 16.7 C 17.4,0 18,0.6 18,1.3 v 9.9 c 0,0.3 -0.1,0.6 -0.4,0.8 q 0,0 0,0 0,0 0,0 c -0.2,0.3 -0.5,0.4 -0.9,0.4 z M 0.9,1.3 V 11 L 6.8,5.2 0.9,1.2 q 0,0 0,0.1 z M 16.5,11.6 10.5,5.7 9.7,6.2 Q 9.4,6.4 9,6.4 8.6,6.4 8.3,6.2 L 7.5,5.7 1.5,11.6 Z M 17.1,1.3 q 0,-0.1 0,-0.1 l -6,4 6,5.8 z M 8.7,5.6 C 8.8,5.7 9,5.7 9.2,5.6 L 16.1,0.9 H 1.7 Z"
+     d="m 3,14.8 q -0.1,0 -0.2,0 C 2.7,14.7 2.6,14.6 2.6,14.4 V 12.3 H 1.3 C 0.6,12.3 0,11.8 0,11.1 V 1.2 C 0,0.5 0.6,0 1.3,0 H 16.7 C 17.4,0 18,0.5 18,1.2 v 9.9 c 0,0.7 -0.6,1.2 -1.3,1.2 H 5.8 L 3.3,14.7 Q 3.2,14.8 3,14.8 Z M 1.3,0.8 C 1,0.8 0.9,1 0.9,1.2 v 9.9 c 0,0.2 0.1,0.4 0.4,0.4 H 3 c 0.2,0 0.4,0.2 0.4,0.4 v 1.5 l 1.9,-1.8 q 0.1,-0.1 0.3,-0.1 h 11.1 c 0.3,0 0.4,-0.2 0.4,-0.4 V 1.2 C 17.1,1 17,0.8 16.7,0.8 Z M 6.1,6.2 C 6.1,6.5 5.8,6.8 5.4,6.8 5.1,6.8 4.8,6.5 4.8,6.2 4.8,5.8 5.1,5.5 5.4,5.5 c 0.4,0 0.7,0.3 0.7,0.7 z m 3.6,0 C 9.7,6.5 9.4,6.8 9,6.8 8.7,6.8 8.4,6.5 8.4,6.2 8.4,5.8 8.7,5.5 9,5.5 c 0.4,0 0.7,0.3 0.7,0.7 z m 3.3,0 c 0,0.3 -0.3,0.6 -0.6,0.6 -0.4,0 -0.7,-0.3 -0.7,-0.6 0,-0.4 0.3,-0.7 0.7,-0.7 0.3,0 0.6,0.3 0.6,0.7 z"
      class="s0"
      fill-rule="evenodd"
-     id="Shape 2" />
+     id="Shape 3" />
 </svg>
