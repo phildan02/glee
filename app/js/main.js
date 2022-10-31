@@ -79,4 +79,9 @@ $(function () {
 
   });
 
+  $('.related-products__items').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+  });
+
 });

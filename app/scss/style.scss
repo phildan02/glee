@@ -400,8 +400,9 @@
 }
 
 .products-item {
-    width: 270px;
+    width: 270px !important;
     height: 380px;
+    box-shadow: 0px 6px 25px rgba(37, 37, 37, 0.05);
 
     display: flex;
     flex-direction: column;
@@ -409,7 +410,8 @@
     position: relative;
 
     &__img-box {
-        margin: auto 0;
+        width: 240px;
+        margin: auto auto;
         padding: 15px;
         overflow: hidden;
 
@@ -421,9 +423,7 @@
     }
 
     &__img {
-        max-width: none;
         margin: 0 auto;
-        object-fit: cover;
     }
 
     &__link-box {
@@ -585,6 +585,9 @@
     padding-top: 40px;
     position: relative;
     overflow: hidden;
+    background-color: #f8f8f8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 
     &__name {
         max-width: 171px;
@@ -1267,14 +1270,15 @@
     }
 }
 
-.slick-slide.slick-active {
-    height: 160px;
-    margin-bottom: 25px;
-}
 
 .product-slide {
     display: flex;
     height: 530px;
+
+    .slick-slide.slick-active {
+        height: 160px;
+        margin-bottom: 25px;
+    }
 
     &__thumb {
         width: 140px;
@@ -1395,6 +1399,7 @@
 
 .product-tabs {
     padding-top: 100px;
+    margin-bottom: 108px;
 
     &__top {
         text-align: center;
@@ -1437,7 +1442,7 @@
     color: #243f4d;
 }
 
-.tabs-add-inf{
+.tabs-add-inf {
     font-size: 16px;
     line-height: 30px;
     color: #243f4d;
@@ -1631,6 +1636,60 @@
         color: #fff;
     }
 }
+
+
+.related-products {
+    position: relative;
+
+    &__title {
+        @extend %dmsans-700;
+        font-size: 36px;
+        line-height: 1;
+        color: #243f4d;
+        margin-bottom: 60px;
+    }
+
+    .products-item {
+        display: flex !important;
+        background-color: #fff;
+    }
+
+    .slick-list {
+        box-shadow: 0px 6px 25px rgba(37, 37, 37, 0.05);
+    }
+
+    .slick-arrow {
+        position: absolute;
+        top: -112px;
+        width: 52px;
+        height: 52px;
+        padding: 0;
+        background-color: transparent;
+        background-size: contain;
+        background-position: center;
+        border-radius: 5px;
+        border: 2px solid #edf1f4;
+        font-size: 0;
+
+        &:hover {
+            border: 2px solid #a3bbc8;
+        }
+    }
+
+    .slick-prev {
+        background-image: url(../images/icons/related-arrow-left.svg);
+        right: 72px;
+    }
+
+    .slick-next {
+        background-image: url(../images/icons/related-arrow-right.svg);
+        right: 0;
+    }
+}
+
+
+
+
 
 
 
