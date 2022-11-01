@@ -1859,6 +1859,94 @@
 }
 
 
+.blog-one {
+    &__content {
+        h2 {
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 26px;
+            color: #333;
+        }
+
+        h3 {
+            // display: inline-block;
+            @extend %rubik-500;
+            font-size: 18px;
+            line-height: 30px;
+            color: #243f4d;
+            margin-top: 26px;
+        }
+
+        h4 {
+            @extend %rubik-500;
+            font-size: 16px;
+            line-height: 30px;
+            color: #243f4d;
+            margin-top: 24px;
+        }
+
+        p {
+            // display: inline-block;
+            font-size: 16px;
+            line-height: 30px;
+            color: #243f4d;
+            margin-top: 18px;
+        }
+
+        blockquote {
+            margin-top: 30px;
+            padding: 20px 100px 20px 34px;
+            background-color: #edf1f4;
+            border-left: 6px solid #a3bbc8;
+            font-size: 16px;
+            line-height: 30px;
+            color: #243f4d;
+
+            cite{
+                display: block;
+                font-style: normal;
+                margin-top: 8px;
+                margin-left: 45px;
+                position: relative;
+
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 14px;
+                    left: -45px;
+                    width: 20px;
+                    height: 3px;
+                    background-color: #a3bbc8;
+                }
+            }
+        }
+
+
+    }
+
+    &__left-img{
+        float: left;
+        margin-top: 45px;
+        margin-right: 30px;
+
+        & + h1,
+        & + h2,
+        & + h3,
+        & + h4,
+        & + h5,
+        & + h6,
+        & + p {
+            margin-top: 65px;
+        }
+    }
+
+    &__right-img{
+        float: right;
+        margin-top: 45px;
+        margin-left: 30px;
+    }
+}
+
 
 
 
