@@ -5,19 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog list</title>
+    <title>Terms & Conditions</title>
     <link rel="stylesheet" href="css/style.min.css">
     <style>
-        .blog {
-            display: none;
+        .blog__title {
+            color: #243f4d;
         }
 
-        .footer__partners {
-            padding-top: 76px;
-        }
-
-        .pagination{
-            justify-content: flex-start;
+        .blog__link {
+            color: #243f4d;
         }
     </style>
 </head>
@@ -77,178 +73,52 @@
     <main class="main">
 
         <section class="top">
-            <h2 class="top__title">Blog</h2>
+            <h2 class="top__title">Terms & Conditions</h2>
             <div class="breadcrumbs">
                 <ul class="breadcrumbs__list">
                     <li class="breadcrumbs__item">
                         <a class="breadcrumbs__link" href="#">Home</a>
                     </li>
                     <li class="breadcrumbs__item">
-                        <a class="breadcrumbs__link" href="#">Blog</a>
+                        <a class="breadcrumbs__link" href="#">Terms & Conditions</a>
                     </li>
                 </ul>
             </div>
         </section>
 
-        <section class="blog-list">
+        <section class="terms-page">
             <div class="container">
-                <div class="blog-list__inner">
-                    <div class="blog-list__content">
-                        <div class="blog-list-item">
-                            <div class="blog-list-item__img-box">
-                                <img class="blog-list-item__img" src="images/blog-list/1.png" alt="blog image">
-                                <div class="blog-list-item__info">
-                                    <div class="blog__item-date">28 JANUARY, 2020</div>
-                                    <a class="blog__item-author" href="#">BY ADMIN</a>
-                                </div>
-                            </div>
-                            <h3 class="blog-list-item__title">Fonsectetur adipisicing  eiusmod</h3>
-                            <p class="blog-list-item__sum">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-                            <a class="products-bottom__link" href="#">View More<img class="link-btn-arrow" src="images/icons/blog-list-item-link-arrow.svg" alt="link button arrow"></a>
-                        </div>
-
-                        <div class="blog-list-item">
-                            <div class="blog-list-item__img-box">
-                                <img class="blog-list-item__img" src="images/blog-list/2.png" alt="blog image">
-                                <div class="blog-list-item__info">
-                                    <div class="blog__item-date">28 JANUARY, 2020</div>
-                                    <a class="blog__item-author" href="#">BY ADMIN</a>
-                                </div>
-                            </div>
-                            <h3 class="blog-list-item__title">Fonsectetur adipisicing elit,</h3>
-                            <p class="blog-list-item__sum">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-                            <a class="products-bottom__link" href="#">View More<img class="link-btn-arrow" src="images/icons/blog-list-item-link-arrow.svg" alt="link button arrow"></a>
-                        </div>
-
-                        <div class="blog-list-item">
-                            <div class="blog-list-item__img-box">
-                                <img class="blog-list-item__img" src="images/blog-list/3.png" alt="blog image">
-                                <div class="blog-list-item__info">
-                                    <div class="blog__item-date">28 JANUARY, 2020</div>
-                                    <a class="blog__item-author" href="#">BY ADMIN</a>
-                                </div>
-                            </div>
-                            <h3 class="blog-list-item__title">Fsectetur adipisicing tempor incididunt</h3>
-                            <p class="blog-list-item__sum">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-                            <a class="products-bottom__link" href="#">View More<img class="link-btn-arrow" src="images/icons/blog-list-item-link-arrow.svg" alt="link button arrow"></a>
-                        </div>
-                        
-                        <div class="blog-list-item">
-                            <div class="blog-list-item__img-box">
-                                <img class="blog-list-item__img" src="images/blog-list/4.png" alt="blog image">
-                                <div class="blog-list-item__info">
-                                    <div class="blog__item-date">28 JANUARY, 2020</div>
-                                    <a class="blog__item-author" href="#">BY ADMIN</a>
-                                </div>
-                            </div>
-                            <h3 class="blog-list-item__title">vonsectetur adipisicing elit</h3>
-                            <p class="blog-list-item__sum">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-                            <a class="products-bottom__link" href="#">View More<img class="link-btn-arrow" src="images/icons/blog-list-item-link-arrow.svg" alt="link button arrow"></a>
-                        </div>
-
-                        <div class="pagination">
-                            <ul class="pagination__list">
-                                <li class="pagination__item">
-                                    <a class="pagination__link pagination__link--active" href="#">1</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a class="pagination__link" href="#">2</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a class="pagination__link" href="#">3</a>
-                                </li>
-                            </ul>
-                            <a class="pagination__next" href="#">Next</a>
-                        </div>
-                    </div>
-
-                    <div class="product-list__filters filter">
-                        <div class="filter__item filter-search">
-                            <form class="filter-search__form" action="#">
-                                <input class="filter-search__input" type="text">
-                                <button class="filter-search__btn" type="submit">
-                                    <img src="images/icons/filter-search-magnifier.svg" alt="search icon">
-                                </button>
-                            </form>
-                        </div>
-
-                        <div class="filter__item filter-category">
-                            <h3 class="filter__title filter-category__title">CATEGORY</h3>
-                            <form class="filter-category__form" action="#">
-                                <label class="filter-category__label">
-                                    <input class="filter-category__input" type="checkbox">
-                                    <div class="filter-category__checkbox">
-                                        <span>Chair</span>
-                                        <img class="filter-category__arrow" src="images/icons/filter-arrow.svg"
-                                            alt="filter arrow">
-                                    </div>
-                                </label>
-                                <label class="filter-category__label">
-                                    <input class="filter-category__input" type="checkbox">
-                                    <div class="filter-category__checkbox">
-                                        <span>Table</span>
-                                        <img class="filter-category__arrow" src="images/icons/filter-arrow.svg"
-                                            alt="filter arrow">
-                                    </div>
-                                </label>
-                                <label class="filter-category__label">
-                                    <input class="filter-category__input" type="checkbox">
-                                    <div class="filter-category__checkbox">
-                                        <span>Lamp</span>
-                                        <img class="filter-category__arrow" src="images/icons/filter-arrow.svg"
-                                            alt="filter arrow">
-                                    </div>
-                                </label>
-                                <label class="filter-category__label">
-                                    <input class="filter-category__input" type="checkbox">
-                                    <div class="filter-category__checkbox">
-                                        <span>Watch</span>
-                                        <img class="filter-category__arrow" src="images/icons/filter-arrow.svg"
-                                            alt="filter arrow">
-                                    </div>
-                                </label>
-                                <label class="filter-category__label">
-                                    <input class="filter-category__input" type="checkbox">
-                                    <div class="filter-category__checkbox">
-                                        <span>Clock</span>
-                                        <img class="filter-category__arrow" src="images/icons/filter-arrow.svg"
-                                            alt="filter arrow">
-                                    </div>
-                                </label>
-                            </form>
-                        </div>
-            
-                        <div class="filter__item recent-posts">
-                            <h3 class="filter__title recent-posts__title">RECENT POSTS</h3>
-                            <div class="recent-posts__items">
-                                <a class="recent-posts__item" href="#">
-                                    <img class="recent-posts__img" src="images/recent-posts/1.png"
-                                        alt="recent posts img">
-                                    <h4 class="recent-posts__name">Corem ipsum dolor tetur adipisicing elit</h4>
-                                    <p class="recent-posts__date">28 JANUARY, 2020</p>
-                                </a>
-                                <a class="recent-posts__item" href="#">
-                                    <img class="recent-posts__img" src="images/recent-posts/2.png"
-                                        alt="recent posts img">
-                                    <h4 class="recent-posts__name">Fdipisicing elit, sed do eiusmod tempor</h4>
-                                    <p class="recent-posts__date">28 JANUARY, 2020</p>
-                                </a>
-                                <a class="recent-posts__item" href="#">
-                                    <img class="recent-posts__img" src="images/recent-posts/3.png"
-                                        alt="recent posts img">
-                                    <h4 class="recent-posts__name">Eonsectetur adipisicing elit, sed do eiusmod </h4>
-                                    <p class="recent-posts__date">28 JANUARY, 2020</p>
-                                </a>
-                                <a class="recent-posts__item" href="#">
-                                    <img class="recent-posts__img" src="images/recent-posts/4.png"
-                                        alt="recent posts img">
-                                    <h4 class="recent-posts__name">gnim ad minim veniam, quis nostrud</h4>
-                                    <p class="recent-posts__date">28 JANUARY, 2020</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <h3>Types of Personal Information We Collect</h3>
+                <ol>
+                    <li>
+                        Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    </li>
+                    <li>
+                        Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    </li>
+                    <li>
+                        Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </li>
+                    <li>
+                        Dagna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat.
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    </li>
+                </ol>
+                <h3>How marketpmss.com Collects Personal Infonnation</h3>
+                <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                <h3>How marketprosscom Uses Personal Information</h3>
+                <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
             </div>
         </section>
 
@@ -263,6 +133,7 @@
                     <div class="blog__link-inner">
                         <a class="blog__link" href="#">
                             View All
+                            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
                             <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
@@ -289,7 +160,7 @@
                                 <title id="title2">Shape 21</title>
                                 <style>
                                     .s0 {
-                                        fill: #262626;
+                                        fill: #243f4d;
                                     }
                                 </style>
                                 <path
@@ -318,7 +189,8 @@
                         </a>
                         <div class="blog__item-type">NEWS</div>
                         <div class="blog__item-info">
-                            <h4 class="blog__item-title">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</h4>
+                            <h4 class="blog__item-title">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore</h4>
                             <div class="blog__item-date">28 JANUARY, 2020</div>
                             <a class="blog__item-author" href="#">BY ADMIN</a>
                         </div>
