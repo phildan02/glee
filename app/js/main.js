@@ -68,8 +68,8 @@ $(function () {
 $(function () {
 
   $('.product-one__num').styler();
-  
-  $('.product-tabs__top-item').on('click', function(e){
+
+  $('.product-tabs__top-item').on('click', function (e) {
     e.preventDefault();
     $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');
     $(this).addClass('product-tabs__top-item--active');
