@@ -2,14 +2,14 @@ ymaps.ready(init);
 
 function init() {
     var myMap = new ymaps.Map("map", {
-            center: [55.76, 37.64],
-            zoom: 10
+            center: [29.767537, -95.283336],
+            zoom: 9
         }, {
             searchControlProvider: 'yandex#search'
         });
 
     myMap.geoObjects
-        .add(new ymaps.Placemark([55.684758, 37.738521], {}, {
+        .add(new ymaps.Placemark([29.767537, -95.283336], {}, {
             preset: 'islands#icon',
             iconColor: '#436372'
         }))
