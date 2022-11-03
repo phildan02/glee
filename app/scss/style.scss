@@ -2223,6 +2223,18 @@
 }
 
 
+.mission {
+    &__photo {
+        float: left;
+        width: 570px;
+        height: 676px;
+        object-fit: cover;
+        object-position: center;
+        margin-right: 50px;
+    }
+}
+
+
 
 
 
