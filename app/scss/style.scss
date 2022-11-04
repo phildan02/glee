@@ -2186,6 +2186,7 @@
 
         .contact-item__logo-box {
             background-color: #a3bbc8;
+
             svg {
                 path {
                     fill: #fff;
@@ -2224,6 +2225,9 @@
 
 
 .mission {
+    height: 676px;
+    margin-bottom: 120px;
+
     &__photo {
         float: left;
         width: 570px;
@@ -2231,6 +2235,87 @@
         object-fit: cover;
         object-position: center;
         margin-right: 50px;
+    }
+
+    &__years {
+        display: flex;
+        align-items: flex-end;
+        padding-top: 56px;
+        margin-bottom: 30px;
+    }
+
+    &__years-num {
+        @extend %rubik-700;
+        font-size: 140px;
+        line-height: 1;
+        color: #a3bbc8;
+        margin-right: 25px;
+    }
+
+    &__years-descr {
+        font-size: 16px;
+        line-height: 30px;
+        color: #243f4d;
+        margin-bottom: 12px;
+    }
+
+    &__title {
+        @extend %dmsans-700;
+        font-size: 36px;
+        line-height: 1;
+        color: #243f4d;
+        margin-bottom: 35px;
+    }
+
+    &__descr {
+        font-size: 16px;
+        line-height: 30px;
+        color: #243f4d;
+        margin-bottom: 60px;
+    }
+
+    ul.mission__info {
+        display: flex;
+        padding-top: 30px;
+        border-top: 2px solid #e6eaf0;
+    }
+
+    &__info-item {
+        width: 182px;
+        height: 80px;
+
+        &:nth-child(-n+2) {
+            width: 184px;
+            border-right: 1px solid #e6eaf0;
+        }
+
+        &:nth-child(n+2) img {
+            margin-left: 20px;
+        }
+    }
+
+    &__info-icon {
+        float: left;
+        width: 62px;
+        height: 100%;
+        object-fit: none;
+        object-position: left 14px;
+    }
+
+    &__info-value {
+        @extend %dmsans-700;
+        font-size: 36px;
+        line-height: 38px;
+        color: #243f4d;
+        margin-top: 5px;
+        margin-bottom: 3px;
+    }
+
+    &__info-prop {
+        @extend %dmsans-700;
+        font-size: 16px;
+        line-height: 17px;
+        color: #4c4c4c;
     }
 }
 
