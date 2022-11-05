@@ -2334,6 +2334,22 @@
     &__item {
         width: 280px;
         text-align: center;
+
+        &:nth-child(2) .widgets__img {
+            margin-bottom: 8px;
+        }
+
+        &:nth-child(n+3) .widgets__img {
+            margin-bottom: -3px;
+        }
+
+        &:nth-child(3) .widgets__img-box::after {
+            right: 96px;
+        }
+
+        &:nth-child(4) .widgets__img-box::after {
+            right: 104px;
+        }
     }
 
     &__img-box {
@@ -2341,6 +2357,23 @@
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 98px;
+            bottom: -3px;
+            z-index: 1;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background-color: #a3bbc8;
+        }
+    }
+
+    &__img {
+        z-index: 2;
     }
 
     &__num {
