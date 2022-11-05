@@ -2325,6 +2325,7 @@
     height: 320px;
     background-color: #fcd7b6;
     padding: 75px 0;
+    margin-bottom: 120px;
 
     &__items {
         display: flex;
@@ -2392,8 +2393,117 @@
 }
 
 
+.team {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
 
+    &__side-info {
+        max-width: 300px;
+        width: 100%;
+    }
 
+    &__title {
+        @extend %dmsans-700;
+        font-size: 36px;
+        line-height: 1;
+        color: #243f4d;
+        margin-bottom: 25px;
+    }
 
+    &__descr {
+        font-size: 16px;
+        line-height: 30px;
+        color: #243f4d;
+        margin-bottom: 30px;
+    }
 
-@import 'media';
+    &__link {
+        display: block;
+        text-align: center;
+        width: 170px;
+        height: 50px;
+        border-radius: 5px;
+        background-color: #a3bbc8;
+        @extend %poppins-600;
+        font-size: 15px;
+        line-height: 50px;
+        color: #fff;
+
+        img {
+            display: inline;
+            margin-left: 17px;
+        }
+    }
+
+    &__list {
+        max-width: 770px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        height: 380px;
+        margin-bottom: 40px;
+        position: relative;
+
+        &:nth-last-child(-n+2) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item-photo {
+        width: 370px;
+        height: 320px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__item-info {
+        position: absolute;
+        bottom: 0;
+        width: 325px;
+        height: 110px;
+        background-color: #fff;
+        box-shadow: 0px 6px 28.5px rgba(37, 37, 37, 0.05);
+        padding: 0 20px 0 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item-name {
+        @extend %dmsans-700;
+        font-size: 22px;
+        line-height: 26px;
+        color: #436372;
+        margin-bottom: 5px;
+    }
+
+    &__item-position {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #565872;
+    }
+
+    &__item-social {
+        display: flex;
+    }
+
+    &__social-link {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background-color: #f6f6f6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:first-child {
+            margin-right: 7px;
+        }
+    }
+}
