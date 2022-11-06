@@ -31,6 +31,36 @@
     }
 }
 
+
+.extended-menu {
+    position: absolute;
+    z-index: 1;
+    // display: flex;
+    // flex-direction: column;
+    background-color: #000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    
+    &__link {
+        display: block !important;
+    }
+}
+
+.pages-extended {
+    cursor: pointer;
+    position: relative;
+
+    &__checkbox {
+        @extend %checkbox-hidden;
+
+        &:checked + .extended-menu {
+            background-color: purple;
+        }
+    }
+}
+
+
 .user-nav {
     display: flex;
     align-items: center;
