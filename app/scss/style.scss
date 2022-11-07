@@ -33,30 +33,30 @@
 
 
 .extended-menu {
-    position: absolute;
-    z-index: 1;
-    // display: flex;
-    // flex-direction: column;
-    background-color: #000;
-    border-radius: 10px;
-    padding: 20px;
-    width: 200px;
-    
-    &__link {
-        display: block !important;
-    }
-}
-
-.pages-extended {
     cursor: pointer;
     position: relative;
 
     &__checkbox {
         @extend %checkbox-hidden;
 
-        &:checked + .extended-menu {
-            background-color: purple;
+        &:checked + .extended-menu__list {
+            opacity: 1;
         }
+    }
+
+    &__list {
+        position: absolute;
+        z-index: 1;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        opacity: 0;
+        transition: all .7s;
+    }
+
+    &__link {
+        display: block;
+        white-space: nowrap;
     }
 }
 
@@ -883,6 +883,10 @@
     }
 
     &__register-btn {
+        display: block;
+        text-align: center;
+        padding: 19px 0;
+        cursor: pointer;
         width: 100%;
         border: 2px solid #a3bbc8;
         background-color: #fff;
@@ -890,8 +894,6 @@
         font-size: 18px;
         line-height: 1;
         color: #243f4d;
-        padding: 19px 0;
-        cursor: pointer;
     }
 }
 
