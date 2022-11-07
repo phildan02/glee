@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +8,45 @@
     <title>Glee</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a class="logo" href="#">
-                    <img class="logo__img" src="images/icons/logo.png" alt="logo">
+                <a class="logo" href="index.html">
+                    <img class="logo__img" src="images/icons/logo.svg" alt="logo">
                 </a>
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">Home +</a>
+                            <a class="menu__list-link" href="index.html">Home +</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">About</a>
+                            <a class="menu__list-link" href="about.html">About</a>
                         </li>
                         <li class="menu__list-item">
                             <a class="menu__list-link" href="#">Services</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">Pages +</a>
+                            <label class="extended-menu">
+                                <span class="menu__list-link">Pages +</span>
+                                <input class="extended-menu__checkbox" type="checkbox">
+                                <div class="extended-menu__list">
+                                    <a class="extended-menu__link" href="blog.html">Blog list</a>
+                                    <a class="extended-menu__link" href="blog-details.html">Blog details</a>
+                                    <a class="extended-menu__link" href="login.html">Login</a>
+                                    <a class="extended-menu__link" href="product-list-1.html">Products (grid)</a>
+                                    <a class="extended-menu__link" href="product-list-2.html">Products (list)</a>
+                                    <a class="extended-menu__link" href="product-details.html">Product details</a>
+                                    <a class="extended-menu__link" href="terms-conditions.html">Terms & Conditions</a>
+                                </div>
+                            </label>
                         </li>
                         <li class="menu__list-item">
                             <a class="menu__list-link" href="#">News</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">Contact</a>
+                            <a class="menu__list-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -59,11 +73,1291 @@
     </header>
 
 
-    <main class="main"></main>
+    <main class="main">
+        <section class="top-slider">
+            <div class="top-slider__inner">
+                <div class="top-slider__item">
+                    <div class="top-slider__content">
+                        <h3 class="top-slider__title">SMART AND TRENDY</h3>
+                        <p class="top-slider__text">
+                            Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        </p>
+                        <a class="top-slider__link" href="#">Shop Now<img class="top-slider__link-arrow"
+                                src="images/icons/slider-arrow.svg" alt="slider-arrow"></a>
+                    </div>
+                    <img class="top-slider__img" src="images/slider.png" alt="slider img">
+                </div>
+                <div class="top-slider__item">
+                    <div class="top-slider__content">
+                        <h3 class="top-slider__title">SMART AND TRENDY</h3>
+                        <p class="top-slider__text">
+                            Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        </p>
+                        <a class="top-slider__link" href="#">Shop Now<img class="top-slider__link-arrow"
+                                src="images/icons/slider-arrow.svg" alt="slider-arrow"></a>
+                    </div>
+                    <img class="top-slider__img" src="images/slider.png" alt="slider img">
+                </div>
+                <div class="top-slider__item">
+                    <div class="top-slider__content">
+                        <h3 class="top-slider__title">SMART AND TRENDY</h3>
+                        <p class="top-slider__text">
+                            Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        </p>
+                        <a class="top-slider__link" href="#">Shop Now<img class="top-slider__link-arrow"
+                                src="images/icons/slider-arrow.svg" alt="slider-arrow"></a>
+                    </div>
+                    <img class="top-slider__img" src="images/slider.png" alt="slider img">
+                </div>
+            </div>
+            <div class="info">
+                <div class="info__item">
+                    <img class="info__item-img" src="images/icons/support.svg" alt="info img">
+                    <h5 class="info__item-title">Support 24/7.</h5>
+                    <p class="info__item-text">Contact us 24 hours a day, <br> 7 days a week.</p>
+                </div>
+                <div class="info__item">
+                    <img class="info__item-img" src="images/icons/delivery.svg" alt="info img">
+                    <h5 class="info__item-title">Delivery.</h5>
+                    <p class="info__item-text">Free shipping on all US order.</p>
+                </div>
+                <div class="info__item">
+                    <img class="info__item-img" src="images/icons/secure.svg" alt="info img">
+                    <h5 class="info__item-title">100% Payment secure.</h5>
+                    <p class="info__item-text">We ensure secure payment <br> with PEV.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="container">
+                <div class="products__top">
+                    <h2 class="title products__title">Products of the week</h2>
+                    <div class="mixfilter products__filter">
+                        <button class="mixfilter__btn products__btn" data-filter="all">All</button>
+                        <button class="mixfilter__btn products__btn" data-filter=".category-a">Furnitures</button>
+                        <button class="mixfilter__btn products__btn" data-filter=".category-b">Chairs</button>
+                        <button class="mixfilter__btn products__btn" data-filter=".category-c">Lighting</button>
+                        <button class="mixfilter__btn products__btn" data-filter=".category-d">Decor</button>
+                    </div>
+                </div>
+                <div class="products__content">
+                    <div class="products-item mix category-a">
+                        <div class="products-item__img-box">
+                            <img class="products-item__img" src="images/products/1.png" alt="product image">
+                            <div class="products-item__link-box">
+                                <a class="products-item__link" href="#">
+                                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        sodipodi:docname="products-search.svg"
+                                        inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg888" version="1.1"
+                                        viewBox="0 0 5.2982817 5.2916651" height="5.2916651mm" width="5.2982817mm">
+                                        <defs id="defs882" />
+                                        <sodipodi:namedview inkscape:window-maximized="0" inkscape:window-y="35"
+                                            inkscape:window-x="200" inkscape:window-height="967"
+                                            inkscape:window-width="1513" showgrid="false" inkscape:document-rotation="0"
+                                            inkscape:current-layer="layer1" inkscape:document-units="mm"
+                                            inkscape:cy="13.252319" inkscape:cx="29.835483" inkscape:zoom="11.2"
+                                            inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0"
+                                            bordercolor="#666666" pagecolor="#ffffff" id="base" />
+                                        <metadata id="metadata885">
+                                            <rdf:RDF>
+                                                <cc:Work rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <g transform="translate(-57.071097,-109.23512)" id="layer1"
+                                            inkscape:groupmode="layer" inkscape:label="Слой 1">
+                                            <path style="fill:#a3bbc8;stroke-width:0.264583" id="path17"
+                                                fill-rule="evenodd" class="s4"
+                                                d="m 62.230472,114.36804 c -0.211666,0.21166 -0.529166,0.21166 -0.714375,0 l -1.217083,-1.19063 c 0.291042,-0.18521 0.529167,-0.42333 0.714375,-0.71437 l 1.217083,1.21708 c 0.185209,0.18521 0.185209,0.50271 0,0.68792 z m -3.175,-1.16417 c -1.084791,0 -1.984375,-0.89958 -1.984375,-1.98438 0,-1.08479 0.899584,-1.98437 1.984375,-1.98437 1.084792,0 1.984375,0.89958 1.984375,1.98437 0,1.0848 -0.899583,1.98438 -1.984375,1.98438 z m 1.481667,-1.98438 c 0,-0.8202 -0.661458,-1.48166 -1.481667,-1.48166 -0.820208,0 -1.481666,0.66146 -1.481666,1.48166 0,0.82021 0.661458,1.48167 1.481666,1.48167 0.820209,0 1.481667,-0.66146 1.481667,-1.48167 z m -1.481667,-1.16416 v 0.34396 c -0.449791,0 -0.820208,0.37041 -0.820208,0.8202 h -0.343958 c 0,-0.635 0.529166,-1.16416 1.164166,-1.16416 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a class="products-item__link products-item__link--line" href="#">
+                                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        sodipodi:docname="products-cart.svg"
+                                        inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg42" version="1.1"
+                                        viewBox="0 0 5.8142452 5.2917099" height="5.2917099mm" width="5.8142452mm">
+                                        <defs id="defs36" />
+                                        <sodipodi:namedview inkscape:window-maximized="1" inkscape:window-y="-8"
+                                            inkscape:window-x="-8" inkscape:window-height="1018"
+                                            inkscape:window-width="1920" showgrid="false" inkscape:document-rotation="0"
+                                            inkscape:current-layer="layer1" inkscape:document-units="mm"
+                                            inkscape:cy="10.082299" inkscape:cx="-5.8685859" inkscape:zoom="22.4"
+                                            inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0"
+                                            bordercolor="#666666" pagecolor="#ffffff" id="base" />
+                                        <metadata id="metadata39">
+                                            <rdf:RDF>
+                                                <cc:Work rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <g transform="translate(-130.14051,-284.61607)" id="layer1"
+                                            inkscape:groupmode="layer" inkscape:label="Слой 1">
+                                            <path style="fill:#a3bbc7;stroke-width:0.264583;fill-opacity:1" id="Forma 1"
+                                                class="s3"
+                                                d="m 130.14051,284.82774 c 0,-0.10584 0.10583,-0.21167 0.21167,-0.21167 h 0.79375 c 0.0794,0 0.15875,0.0529 0.1852,0.15875 l 0.89959,3.175 h 2.38125 l 0.79375,-1.82562 h -2.64584 c -0.10583,0 -0.21166,-0.10584 -0.21166,-0.21167 0,-0.13229 0.10583,-0.21167 0.21166,-0.21167 h 2.9898 c 0.0794,0 0.13229,0.0265 0.1852,0.0794 0.0265,0.0794 0.0265,0.15875 0,0.21166 l -0.97895,2.27542 c -0.0265,0.0794 -0.10584,0.13229 -0.18521,0.13229 h -2.69875 c -0.10584,0 -0.18521,-0.0794 -0.21167,-0.15875 l -0.89958,-3.20146 h -0.60854 c -0.10584,0 -0.21167,-0.0794 -0.21167,-0.21166 z m 1.21708,4.60375 c 0,-0.29104 0.23813,-0.50271 0.50271,-0.50271 0.26458,0 0.47625,0.21167 0.47625,0.50271 0,0.26458 -0.21167,0.47625 -0.47625,0.47625 -0.26458,0 -0.50271,-0.21167 -0.50271,-0.47625 z m 3.06917,0.0265 c -0.0265,-0.26459 0.18521,-0.50271 0.44979,-0.52917 0.26458,-0.0265 0.50271,0.18521 0.52917,0.44979 0,0.13229 -0.0529,0.26458 -0.13229,0.37042 -0.0794,0.0794 -0.21167,0.15875 -0.34396,0.15875 q 0,0 -0.0265,0 c -0.23813,0 -0.44979,-0.21167 -0.47625,-0.44979 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a class="products-item__link" href="#">
+                                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        sodipodi:docname="products-wishlist.svg"
+                                        inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg911" version="1.1"
+                                        viewBox="0 0 5.8273406 4.7625399" height="4.7625399mm" width="5.8273406mm">
+                                        <defs id="defs905" />
+                                        <sodipodi:namedview inkscape:window-maximized="0" inkscape:window-y="35"
+                                            inkscape:window-x="225" inkscape:window-height="967"
+                                            inkscape:window-width="1513" showgrid="false" inkscape:document-rotation="0"
+                                            inkscape:current-layer="layer1" inkscape:document-units="mm"
+                                            inkscape:cy="8.3138901" inkscape:cx="10.584805" inkscape:zoom="11.2"
+                                            inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0"
+                                            bordercolor="#666666" pagecolor="#ffffff" id="base" />
+                                        <metadata id="metadata908">
+                                            <rdf:RDF>
+                                                <cc:Work rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <g transform="translate(-97.628011,-103.45204)" id="layer1"
+                                            inkscape:groupmode="layer" inkscape:label="Слой 1">
+                                            <path style="fill:#a3bbc8;stroke-width:0.264583" id="path19"
+                                                fill-rule="evenodd" class="s4"
+                                                d="m 103.10883,106.15083 c -0.21167,0.34396 -0.82021,0.87313 -1.24354,1.24355 -0.44979,0.37041 -1.05834,0.8202 -1.32292,0.8202 -0.26458,0 -0.873124,-0.44979 -1.322916,-0.8202 -0.423333,-0.37042 -1.031875,-0.89959 -1.243542,-1.24355 -0.264583,-0.39687 -0.370416,-0.74083 -0.343958,-1.16416 0.02646,-0.39688 0.185208,-0.79375 0.502708,-1.08479 0.291042,-0.29105 0.687917,-0.4498 1.084792,-0.4498 0.661458,0 1.084796,0.50271 1.296456,0.74084 q 0.0265,0.0264 0.0265,0.0264 0.0265,-0.0264 0.0529,-0.0529 c 0.23812,-0.23813 0.66146,-0.71438 1.27,-0.71438 0.39687,0 0.79375,0.15875 1.08479,0.4498 0.3175,0.29104 0.47625,0.68791 0.50271,1.08479 0.0265,0.52916 -0.15875,0.89958 -0.34396,1.16416 z m -0.29104,-0.21166 c -0.15875,0.26458 -0.635,0.74083 -1.16417,1.16416 -0.635,0.55563 -1.00542,0.74084 -1.11125,0.7673 -0.0794,-0.0265 -0.47625,-0.23813 -1.111249,-0.7673 -0.529167,-0.44979 -1.005417,-0.89958 -1.164167,-1.16416 -0.211667,-0.3175 -0.291042,-0.60854 -0.291042,-0.92604 0.05292,-0.66146 0.608542,-1.21709 1.243542,-1.21709 0.502708,0 0.846666,0.42334 1.031876,0.635 0.13229,0.13229 0.18521,0.18521 0.29104,0.18521 0.10583,0 0.18521,-0.0529 0.3175,-0.21167 0.18521,-0.21166 0.55563,-0.60854 1.00542,-0.60854 0.635,0 1.19062,0.55563 1.24354,1.21709 0,0.3175 -0.0794,0.60854 -0.29104,0.92604 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="products-item__info">
+                            <h4 class="products-item__name">Wooden radio</h4>
+                            <p class="products-item__price">$29.00</p>
+                        </div>
+                    </div>
+                    <div class="products-item mix category-b">
+                        <div class="products-item__img-box">
+                            <img class="products-item__img" src="images/products/2.png" alt="product image">
+                            <div class="products-item__link-box">
+                                <a class="products-item__link" href="#">
+                                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        sodipodi:docname="products-search.svg"
+                                        inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg888" version="1.1"
+                                        viewBox="0 0 5.2982817 5.2916651" height="5.2916651mm" width="5.2982817mm">
+                                        <defs id="defs882" />
+                                        <sodipodi:namedview inkscape:window-maximized="0" inkscape:window-y="35"
+                                            inkscape:window-x="200" inkscape:window-height="967"
+                                            inkscape:window-width="1513" showgrid="false" inkscape:document-rotation="0"
+                                            inkscape:current-layer="layer1" inkscape:document-units="mm"
+                                            inkscape:cy="13.252319" inkscape:cx="29.835483" inkscape:zoom="11.2"
+                                            inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0"
+                                            bordercolor="#666666" pagecolor="#ffffff" id="base" />
+                                        <metadata id="metadata885">
+                                            <rdf:RDF>
+                                                <cc:Work rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <g transform="translate(-57.071097,-109.23512)" id="layer1"
+                                            inkscape:groupmode="layer" inkscape:label="Слой 1">
+                                            <path style="fill:#a3bbc8;stroke-width:0.264583" id="path17"
+                                                fill-rule="evenodd" class="s4"
+                                                d="m 62.230472,114.36804 c -0.211666,0.21166 -0.529166,0.21166 -0.714375,0 l -1.217083,-1.19063 c 0.291042,-0.18521 0.529167,-0.42333 0.714375,-0.71437 l 1.217083,1.21708 c 0.185209,0.18521 0.185209,0.50271 0,0.68792 z m -3.175,-1.16417 c -1.084791,0 -1.984375,-0.89958 -1.984375,-1.98438 0,-1.08479 0.899584,-1.98437 1.984375,-1.98437 1.084792,0 1.984375,0.89958 1.984375,1.98437 0,1.0848 -0.899583,1.98438 -1.984375,1.98438 z m 1.481667,-1.98438 c 0,-0.8202 -0.661458,-1.48166 -1.481667,-1.48166 -0.820208,0 -1.481666,0.66146 -1.481666,1.48166 0,0.82021 0.661458,1.48167 1.481666,1.48167 0.820209,0 1.481667,-0.66146 1.481667,-1.48167 z m -1.481667,-1.16416 v 0.34396 c -0.449791,0 -0.820208,0.37041 -0.820208,0.8202 h -0.343958 c 0,-0.635 0.529166,-1.16416 1.164166,-1.16416 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a class="products-item__link" href="#">
+                                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        sodipodi:docname="products-cart.svg"
+                                        inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg42" version="1.1"
+                                        viewBox="0 0 5.8142452 5.2917099" height="5.2917099mm" width="5.8142452mm">
+                                        <defs id="defs36" />
+                                        <sodipodi:namedview inkscape:window-maximized="1" inkscape:window-y="-8"
+                                            inkscape:window-x="-8" inkscape:window-height="1018"
+                                            inkscape:window-width="1920" showgrid="false" inkscape:document-rotation="0"
+                                            inkscape:current-layer="layer1" inkscape:document-units="mm"
+                                            inkscape:cy="10.082299" inkscape:cx="-5.8685859" inkscape:zoom="22.4"
+                                            inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0"
+                                            bordercolor="#666666" pagecolor="#ffffff" id="base" />
+                                        <metadata id="metadata39">
+                                            <rdf:RDF>
+                                                <cc:Work rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <g transform="translate(-130.14051,-284.61607)" id="layer1"
+                                            inkscape:groupmode="layer" inkscape:label="Слой 1">
+                                            <path style="fill:#a3bbc7;stroke-width:0.264583;fill-opacity:1" id="Forma 1"
+                                                class="s3"
+                                                d="m 130.14051,284.82774 c 0,-0.10584 0.10583,-0.21167 0.21167,-0.21167 h 0.79375 c 0.0794,0 0.15875,0.0529 0.1852,0.15875 l 0.89959,3.175 h 2.38125 l 0.79375,-1.82562 h -2.64584 c -0.10583,0 -0.21166,-0.10584 -0.21166,-0.21167 0,-0.13229 0.10583,-0.21167 0.21166,-0.21167 h 2.9898 c 0.0794,0 0.13229,0.0265 0.1852,0.0794 0.0265,0.0794 0.0265,0.15875 0,0.21166 l -0.97895,2.27542 c -0.0265,0.0794 -0.10584,0.13229 -0.18521,0.13229 h -2.69875 c -0.10584,0 -0.18521,-0.0794 -0.21167,-0.15875 l -0.89958,-3.20146 h -0.60854 c -0.10584,0 -0.21167,-0.0794 -0.21167,-0.21166 z m 1.21708,4.60375 c 0,-0.29104 0.23813,-0.50271 0.50271,-0.50271 0.26458,0 0.47625,0.21167 0.47625,0.50271 0,0.26458 -0.21167,0.47625 -0.47625,0.47625 -0.26458,0 -0.50271,-0.21167 -0.50271,-0.47625 z m 3.06917,0.0265 c -0.0265,-0.26459 0.18521,-0.50271 0.44979,-0.52917 0.26458,-0.0265 0.50271,0.18521 0.52917,0.44979 0,0.13229 -0.0529,0.26458 -0.13229,0.37042 -0.0794,0.0794 -0.21167,0.15875 -0.34396,0.15875 q 0,0 -0.0265,0 c -0.23813,0 -0.44979,-0.21167 -0.47625,-0.44979 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a class="products-item__link" href="#">
+                                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        sodipodi:docname="products-wishlist.svg"
+                                        inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg911" version="1.1"
+                                        viewBox="0 0 5.8273406 4.7625399" height="4.7625399mm" width="5.8273406mm">
+                                        <defs id="defs905" />
+                                        <sodipodi:namedview inkscape:window-maximized="0" inkscape:window-y="35"
+                                            inkscape:window-x="225" inkscape:window-height="967"
+                                            inkscape:window-width="1513" showgrid="false" inkscape:document-rotation="0"
+                                            inkscape:current-layer="layer1" inkscape:document-units="mm"
+                                            inkscape:cy="8.3138901" inkscape:cx="10.584805" inkscape:zoom="11.2"
+                                            inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0"
+                                            bordercolor="#666666" pagecolor="#ffffff" id="base" />
+                                        <metadata id="metadata908">
+                                            <rdf:RDF>
+                                                <cc:Work rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <g transform="translate(-97.628011,-103.45204)" id="layer1"
+                                            inkscape:groupmode="layer" inkscape:label="Слой 1">
+                                            <path style="fill:#a3bbc8;stroke-width:0.264583" id="path19"
+                                                fill-rule="evenodd" class="s4"
+                                                d="m 103.10883,106.15083 c -0.21167,0.34396 -0.82021,0.87313 -1.24354,1.24355 -0.44979,0.37041 -1.05834,0.8202 -1.32292,0.8202 -0.26458,0 -0.873124,-0.44979 -1.322916,-0.8202 -0.423333,-0.37042 -1.031875,-0.89959 -1.243542,-1.24355 -0.264583,-0.39687 -0.370416,-0.74083 -0.343958,-1.16416 0.02646,-0.39688 0.185208,-0.79375 0.502708,-1.08479 0.291042,-0.29105 0.687917,-0.4498 1.084792,-0.4498 0.661458,0 1.084796,0.50271 1.296456,0.74084 q 0.0265,0.0264 0.0265,0.0264 0.0265,-0.0264 0.0529,-0.0529 c 0.23812,-0.23813 0.66146,-0.71438 1.27,-0.71438 0.39687,0 0.79375,0.15875 1.08479,0.4498 0.3175,0.29104 0.47625,0.68791 0.50271,1.08479 0.0265,0.52916 -0.15875,0.89958 -0.34396,1.16416 z m -0.29104,-0.21166 c -0.15875,0.26458 -0.635,0.74083 -1.16417,1.16416 -0.635,0.55563 -1.00542,0.74084 -1.11125,0.7673 -0.0794,-0.0265 -0.47625,-0.23813 -1.111249,-0.7673 -0.529167,-0.44979 -1.005417,-0.89958 -1.164167,-1.16416 -0.211667,-0.3175 -0.291042,-0.60854 -0.291042,-0.92604 0.05292,-0.66146 0.608542,-1.21709 1.243542,-1.21709 0.502708,0 0.846666,0.42334 1.031876,0.635 0.13229,0.13229 0.18521,0.18521 0.29104,0.18521 0.10583,0 0.18521,-0.0529 0.3175,-0.21167 0.18521,-0.21166 0.55563,-0.60854 1.00542,-0.60854 0.635,0 1.19062,0.55563 1.24354,1.21709 0,0.3175 -0.0794,0.60854 -0.29104,0.92604 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="products-item__info">
+                            <h4 class="products-item__name">Wooden chair</h4>
+                            <p class="products-item__price">$29.00</p>
+                        </div>
+                    </div>
+                    <div class="products-item mix category-b">
+                        <div class="products-item__img-box">
+                            <img class="products-item__img" src="images/products/3.png" alt="product image">
+                            <div class="products-item__link-box">
+                                <a class="products-item__link" href="#">
+                                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        sodipodi:docname="products-search.svg"
+                                        inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg888" version="1.1"
+                                        viewBox="0 0 5.2982817 5.2916651" height="5.2916651mm" width="5.2982817mm">
+                                        <defs id="defs882" />
+                                        <sodipodi:namedview inkscape:window-maximized="0" inkscape:window-y="35"
+                                            inkscape:window-x="200" inkscape:window-height="967"
+                                            inkscape:window-width="1513" showgrid="false" inkscape:document-rotation="0"
+                                            inkscape:current-layer="layer1" inkscape:document-units="mm"
+                                            inkscape:cy="13.252319" inkscape:cx="29.835483" inkscape:zoom="11.2"
+                                            inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0"
+                                            bordercolor="#666666" pagecolor="#ffffff" id="base" />
+                                        <metadata id="metadata885">
+                                            <rdf:RDF>
+                                                <cc:Work rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <g transform="translate(-57.071097,-109.23512)" id="layer1"
+                                            inkscape:groupmode="layer" inkscape:label="Слой 1">
+                                            <path style="fill:#a3bbc8;stroke-width:0.264583" id="path17"
+                                                fill-rule="evenodd" class="s4"
+                                                d="m 62.230472,114.36804 c -0.211666,0.21166 -0.529166,0.21166 -0.714375,0 l -1.217083,-1.19063 c 0.291042,-0.18521 0.529167,-0.42333 0.714375,-0.71437 l 1.217083,1.21708 c 0.185209,0.18521 0.185209,0.50271 0,0.68792 z m -3.175,-1.16417 c -1.084791,0 -1.984375,-0.89958 -1.984375,-1.98438 0,-1.08479 0.899584,-1.98437 1.984375,-1.98437 1.084792,0 1.984375,0.89958 1.984375,1.98437 0,1.0848 -0.899583,1.98438 -1.984375,1.98438 z m 1.481667,-1.98438 c 0,-0.8202 -0.661458,-1.48166 -1.481667,-1.48166 -0.820208,0 -1.481666,0.66146 -1.481666,1.48166 0,0.82021 0.661458,1.48167 1.481666,1.48167 0.820209,0 1.481667,-0.66146 1.481667,-1.48167 z m -1.481667,-1.16416 v 0.34396 c -0.449791,0 -0.820208,0.37041 -0.820208,0.8202 h -0.343958 c 0,-0.635 0.529166,-1.16416 1.164166,-1.16416 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a class="products-item__link products-item__link--line" href="#">
+                                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        sodipodi:docname="products-cart.svg"
+                                        inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg42" version="1.1"
+                                        viewBox="0 0 5.8142452 5.2917099" height="5.2917099mm" width="5.8142452mm">
+                                        <defs id="defs36" />
+                                        <sodipodi:namedview inkscape:window-maximized="1" inkscape:window-y="-8"
+                                            inkscape:window-x="-8" inkscape:window-height="1018"
+                                            inkscape:window-width="1920" showgrid="false" inkscape:document-rotation="0"
+                                            inkscape:current-layer="layer1" inkscape:document-units="mm"
+                                            inkscape:cy="10.082299" inkscape:cx="-5.8685859" inkscape:zoom="22.4"
+                                            inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0"
+                                            bordercolor="#666666" pagecolor="#ffffff" id="base" />
+                                        <metadata id="metadata39">
+                                            <rdf:RDF>
+                                                <cc:Work rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <g transform="translate(-130.14051,-284.61607)" id="layer1"
+                                            inkscape:groupmode="layer" inkscape:label="Слой 1">
+                                            <path style="fill:#a3bbc7;stroke-width:0.264583;fill-opacity:1" id="Forma 1"
+                                                class="s3"
+                                                d="m 130.14051,284.82774 c 0,-0.10584 0.10583,-0.21167 0.21167,-0.21167 h 0.79375 c 0.0794,0 0.15875,0.0529 0.1852,0.15875 l 0.89959,3.175 h 2.38125 l 0.79375,-1.82562 h -2.64584 c -0.10583,0 -0.21166,-0.10584 -0.21166,-0.21167 0,-0.13229 0.10583,-0.21167 0.21166,-0.21167 h 2.9898 c 0.0794,0 0.13229,0.0265 0.1852,0.0794 0.0265,0.0794 0.0265,0.15875 0,0.21166 l -0.97895,2.27542 c -0.0265,0.0794 -0.10584,0.13229 -0.18521,0.13229 h -2.69875 c -0.10584,0 -0.18521,-0.0794 -0.21167,-0.15875 l -0.89958,-3.20146 h -0.60854 c -0.10584,0 -0.21167,-0.0794 -0.21167,-0.21166 z m 1.21708,4.60375 c 0,-0.29104 0.23813,-0.50271 0.50271,-0.50271 0.26458,0 0.47625,0.21167 0.47625,0.50271 0,0.26458 -0.21167,0.47625 -0.47625,0.47625 -0.26458,0 -0.50271,-0.21167 -0.50271,-0.47625 z m 3.06917,0.0265 c -0.0265,-0.26459 0.18521,-0.50271 0.44979,-0.52917 0.26458,-0.0265 0.50271,0.18521 0.52917,0.44979 0,0.13229 -0.0529,0.26458 -0.13229,0.37042 -0.0794,0.0794 -0.21167,0.15875 -0.34396,0.15875 q 0,0 -0.0265,0 c -0.23813,0 -0.44979,-0.21167 -0.47625,-0.44979 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a class="products-item__link" href="#">
+                                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        sodipodi:docname="products-wishlist.svg"
+                                        inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg911" version="1.1"
+                                        viewBox="0 0 5.8273406 4.7625399" height="4.7625399mm" width="5.8273406mm">
+                                        <defs id="defs905" />
+                                        <sodipodi:namedview inkscape:window-maximized="0" inkscape:window-y="35"
+                                            inkscape:window-x="225" inkscape:window-height="967"
+                                            inkscape:window-width="1513" showgrid="false" inkscape:document-rotation="0"
+                                            inkscape:current-layer="layer1" inkscape:document-units="mm"
+                                            inkscape:cy="8.3138901" inkscape:cx="10.584805" inkscape:zoom="11.2"
+                                            inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0"
+                                            bordercolor="#666666" pagecolor="#ffffff" id="base" />
+                                        <metadata id="metadata908">
+                                            <rdf:RDF>
+                                                <cc:Work rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <g transform="translate(-97.628011,-103.45204)" id="layer1"
+                                            inkscape:groupmode="layer" inkscape:label="Слой 1">
+                                            <path style="fill:#a3bbc8;stroke-width:0.264583" id="path19"
+                                                fill-rule="evenodd" class="s4"
+                                                d="m 103.10883,106.15083 c -0.21167,0.34396 -0.82021,0.87313 -1.24354,1.24355 -0.44979,0.37041 -1.05834,0.8202 -1.32292,0.8202 -0.26458,0 -0.873124,-0.44979 -1.322916,-0.8202 -0.423333,-0.37042 -1.031875,-0.89959 -1.243542,-1.24355 -0.264583,-0.39687 -0.370416,-0.74083 -0.343958,-1.16416 0.02646,-0.39688 0.185208,-0.79375 0.502708,-1.08479 0.291042,-0.29105 0.687917,-0.4498 1.084792,-0.4498 0.661458,0 1.084796,0.50271 1.296456,0.74084 q 0.0265,0.0264 0.0265,0.0264 0.0265,-0.0264 0.0529,-0.0529 c 0.23812,-0.23813 0.66146,-0.71438 1.27,-0.71438 0.39687,0 0.79375,0.15875 1.08479,0.4498 0.3175,0.29104 0.47625,0.68791 0.50271,1.08479 0.0265,0.52916 -0.15875,0.89958 -0.34396,1.16416 z m -0.29104,-0.21166 c -0.15875,0.26458 -0.635,0.74083 -1.16417,1.16416 -0.635,0.55563 -1.00542,0.74084 -1.11125,0.7673 -0.0794,-0.0265 -0.47625,-0.23813 -1.111249,-0.7673 -0.529167,-0.44979 -1.005417,-0.89958 -1.164167,-1.16416 -0.211667,-0.3175 -0.291042,-0.60854 -0.291042,-0.92604 0.05292,-0.66146 0.608542,-1.21709 1.243542,-1.21709 0.502708,0 0.846666,0.42334 1.031876,0.635 0.13229,0.13229 0.18521,0.18521 0.29104,0.18521 0.10583,0 0.18521,-0.0529 0.3175,-0.21167 0.18521,-0.21166 0.55563,-0.60854 1.00542,-0.60854 0.635,0 1.19062,0.55563 1.24354,1.21709 0,0.3175 -0.0794,0.60854 -0.29104,0.92604 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="products-item__info">
+                            <h4 class="products-item__name">White chair</h4>
+                            <p class="products-item__price">$29.00</p>
+                        </div>
+                    </div>
+                    <div class="products-item mix category-a">
+                        <div class="products-item__img-box">
+                            <img class="products-item__img" src="images/products/4.png" alt="product image">
+                            <div class="products-item__link-box">
+                                <a class="products-item__link" href="#">
+                                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        sodipodi:docname="products-search.svg"
+                                        inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg888" version="1.1"
+                                        viewBox="0 0 5.2982817 5.2916651" height="5.2916651mm" width="5.2982817mm">
+                                        <defs id="defs882" />
+                                        <sodipodi:namedview inkscape:window-maximized="0" inkscape:window-y="35"
+                                            inkscape:window-x="200" inkscape:window-height="967"
+                                            inkscape:window-width="1513" showgrid="false" inkscape:document-rotation="0"
+                                            inkscape:current-layer="layer1" inkscape:document-units="mm"
+                                            inkscape:cy="13.252319" inkscape:cx="29.835483" inkscape:zoom="11.2"
+                                            inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0"
+                                            bordercolor="#666666" pagecolor="#ffffff" id="base" />
+                                        <metadata id="metadata885">
+                                            <rdf:RDF>
+                                                <cc:Work rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <g transform="translate(-57.071097,-109.23512)" id="layer1"
+                                            inkscape:groupmode="layer" inkscape:label="Слой 1">
+                                            <path style="fill:#a3bbc8;stroke-width:0.264583" id="path17"
+                                                fill-rule="evenodd" class="s4"
+                                                d="m 62.230472,114.36804 c -0.211666,0.21166 -0.529166,0.21166 -0.714375,0 l -1.217083,-1.19063 c 0.291042,-0.18521 0.529167,-0.42333 0.714375,-0.71437 l 1.217083,1.21708 c 0.185209,0.18521 0.185209,0.50271 0,0.68792 z m -3.175,-1.16417 c -1.084791,0 -1.984375,-0.89958 -1.984375,-1.98438 0,-1.08479 0.899584,-1.98437 1.984375,-1.98437 1.084792,0 1.984375,0.89958 1.984375,1.98437 0,1.0848 -0.899583,1.98438 -1.984375,1.98438 z m 1.481667,-1.98438 c 0,-0.8202 -0.661458,-1.48166 -1.481667,-1.48166 -0.820208,0 -1.481666,0.66146 -1.481666,1.48166 0,0.82021 0.661458,1.48167 1.481666,1.48167 0.820209,0 1.481667,-0.66146 1.481667,-1.48167 z m -1.481667,-1.16416 v 0.34396 c -0.449791,0 -0.820208,0.37041 -0.820208,0.8202 h -0.343958 c 0,-0.635 0.529166,-1.16416 1.164166,-1.16416 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a class="products-item__link products-item__link--line" href="#">
+                                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        sodipodi:docname="products-cart.svg"
+                                        inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg42" version="1.1"
+                                        viewBox="0 0 5.8142452 5.2917099" height="5.2917099mm" width="5.8142452mm">
+                                        <defs id="defs36" />
+                                        <sodipodi:namedview inkscape:window-maximized="1" inkscape:window-y="-8"
+                                            inkscape:window-x="-8" inkscape:window-height="1018"
+                                            inkscape:window-width="1920" showgrid="false" inkscape:document-rotation="0"
+                                            inkscape:current-layer="layer1" inkscape:document-units="mm"
+                                            inkscape:cy="10.082299" inkscape:cx="-5.8685859" inkscape:zoom="22.4"
+                                            inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0"
+                                            bordercolor="#666666" pagecolor="#ffffff" id="base" />
+                                        <metadata id="metadata39">
+                                            <rdf:RDF>
+                                                <cc:Work rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <g transform="translate(-130.14051,-284.61607)" id="layer1"
+                                            inkscape:groupmode="layer" inkscape:label="Слой 1">
+                                            <path style="fill:#a3bbc7;stroke-width:0.264583;fill-opacity:1" id="Forma 1"
+                                                class="s3"
+                                                d="m 130.14051,284.82774 c 0,-0.10584 0.10583,-0.21167 0.21167,-0.21167 h 0.79375 c 0.0794,0 0.15875,0.0529 0.1852,0.15875 l 0.89959,3.175 h 2.38125 l 0.79375,-1.82562 h -2.64584 c -0.10583,0 -0.21166,-0.10584 -0.21166,-0.21167 0,-0.13229 0.10583,-0.21167 0.21166,-0.21167 h 2.9898 c 0.0794,0 0.13229,0.0265 0.1852,0.0794 0.0265,0.0794 0.0265,0.15875 0,0.21166 l -0.97895,2.27542 c -0.0265,0.0794 -0.10584,0.13229 -0.18521,0.13229 h -2.69875 c -0.10584,0 -0.18521,-0.0794 -0.21167,-0.15875 l -0.89958,-3.20146 h -0.60854 c -0.10584,0 -0.21167,-0.0794 -0.21167,-0.21166 z m 1.21708,4.60375 c 0,-0.29104 0.23813,-0.50271 0.50271,-0.50271 0.26458,0 0.47625,0.21167 0.47625,0.50271 0,0.26458 -0.21167,0.47625 -0.47625,0.47625 -0.26458,0 -0.50271,-0.21167 -0.50271,-0.47625 z m 3.06917,0.0265 c -0.0265,-0.26459 0.18521,-0.50271 0.44979,-0.52917 0.26458,-0.0265 0.50271,0.18521 0.52917,0.44979 0,0.13229 -0.0529,0.26458 -0.13229,0.37042 -0.0794,0.0794 -0.21167,0.15875 -0.34396,0.15875 q 0,0 -0.0265,0 c -0.23813,0 -0.44979,-0.21167 -0.47625,-0.44979 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a class="products-item__link" href="#">
+                                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        sodipodi:docname="products-wishlist.svg"
+                                        inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg911" version="1.1"
+                                        viewBox="0 0 5.8273406 4.7625399" height="4.7625399mm" width="5.8273406mm">
+                                        <defs id="defs905" />
+                                        <sodipodi:namedview inkscape:window-maximized="0" inkscape:window-y="35"
+                                            inkscape:window-x="225" inkscape:window-height="967"
+                                            inkscape:window-width="1513" showgrid="false" inkscape:document-rotation="0"
+                                            inkscape:current-layer="layer1" inkscape:document-units="mm"
+                                            inkscape:cy="8.3138901" inkscape:cx="10.584805" inkscape:zoom="11.2"
+                                            inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0"
+                                            bordercolor="#666666" pagecolor="#ffffff" id="base" />
+                                        <metadata id="metadata908">
+                                            <rdf:RDF>
+                                                <cc:Work rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <g transform="translate(-97.628011,-103.45204)" id="layer1"
+                                            inkscape:groupmode="layer" inkscape:label="Слой 1">
+                                            <path style="fill:#a3bbc8;stroke-width:0.264583" id="path19"
+                                                fill-rule="evenodd" class="s4"
+                                                d="m 103.10883,106.15083 c -0.21167,0.34396 -0.82021,0.87313 -1.24354,1.24355 -0.44979,0.37041 -1.05834,0.8202 -1.32292,0.8202 -0.26458,0 -0.873124,-0.44979 -1.322916,-0.8202 -0.423333,-0.37042 -1.031875,-0.89959 -1.243542,-1.24355 -0.264583,-0.39687 -0.370416,-0.74083 -0.343958,-1.16416 0.02646,-0.39688 0.185208,-0.79375 0.502708,-1.08479 0.291042,-0.29105 0.687917,-0.4498 1.084792,-0.4498 0.661458,0 1.084796,0.50271 1.296456,0.74084 q 0.0265,0.0264 0.0265,0.0264 0.0265,-0.0264 0.0529,-0.0529 c 0.23812,-0.23813 0.66146,-0.71438 1.27,-0.71438 0.39687,0 0.79375,0.15875 1.08479,0.4498 0.3175,0.29104 0.47625,0.68791 0.50271,1.08479 0.0265,0.52916 -0.15875,0.89958 -0.34396,1.16416 z m -0.29104,-0.21166 c -0.15875,0.26458 -0.635,0.74083 -1.16417,1.16416 -0.635,0.55563 -1.00542,0.74084 -1.11125,0.7673 -0.0794,-0.0265 -0.47625,-0.23813 -1.111249,-0.7673 -0.529167,-0.44979 -1.005417,-0.89958 -1.164167,-1.16416 -0.211667,-0.3175 -0.291042,-0.60854 -0.291042,-0.92604 0.05292,-0.66146 0.608542,-1.21709 1.243542,-1.21709 0.502708,0 0.846666,0.42334 1.031876,0.635 0.13229,0.13229 0.18521,0.18521 0.29104,0.18521 0.10583,0 0.18521,-0.0529 0.3175,-0.21167 0.18521,-0.21166 0.55563,-0.60854 1.00542,-0.60854 0.635,0 1.19062,0.55563 1.24354,1.21709 0,0.3175 -0.0794,0.60854 -0.29104,0.92604 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="products-item__info">
+                            <h4 class="products-item__name">Retro table</h4>
+                            <p class="products-item__price">$29.00</p>
+                        </div>
+                    </div>
+                    <div class="products-item mix category-a">
+                        <div class="products-item__img-box">
+                            <img class="products-item__img" src="images/products/5.png" alt="product image">
+                            <div class="products-item__link-box">
+                                <a class="products-item__link" href="#">
+                                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        sodipodi:docname="products-search.svg"
+                                        inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg888" version="1.1"
+                                        viewBox="0 0 5.2982817 5.2916651" height="5.2916651mm" width="5.2982817mm">
+                                        <defs id="defs882" />
+                                        <sodipodi:namedview inkscape:window-maximized="0" inkscape:window-y="35"
+                                            inkscape:window-x="200" inkscape:window-height="967"
+                                            inkscape:window-width="1513" showgrid="false" inkscape:document-rotation="0"
+                                            inkscape:current-layer="layer1" inkscape:document-units="mm"
+                                            inkscape:cy="13.252319" inkscape:cx="29.835483" inkscape:zoom="11.2"
+                                            inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0"
+                                            bordercolor="#666666" pagecolor="#ffffff" id="base" />
+                                        <metadata id="metadata885">
+                                            <rdf:RDF>
+                                                <cc:Work rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <g transform="translate(-57.071097,-109.23512)" id="layer1"
+                                            inkscape:groupmode="layer" inkscape:label="Слой 1">
+                                            <path style="fill:#a3bbc8;stroke-width:0.264583" id="path17"
+                                                fill-rule="evenodd" class="s4"
+                                                d="m 62.230472,114.36804 c -0.211666,0.21166 -0.529166,0.21166 -0.714375,0 l -1.217083,-1.19063 c 0.291042,-0.18521 0.529167,-0.42333 0.714375,-0.71437 l 1.217083,1.21708 c 0.185209,0.18521 0.185209,0.50271 0,0.68792 z m -3.175,-1.16417 c -1.084791,0 -1.984375,-0.89958 -1.984375,-1.98438 0,-1.08479 0.899584,-1.98437 1.984375,-1.98437 1.084792,0 1.984375,0.89958 1.984375,1.98437 0,1.0848 -0.899583,1.98438 -1.984375,1.98438 z m 1.481667,-1.98438 c 0,-0.8202 -0.661458,-1.48166 -1.481667,-1.48166 -0.820208,0 -1.481666,0.66146 -1.481666,1.48166 0,0.82021 0.661458,1.48167 1.481666,1.48167 0.820209,0 1.481667,-0.66146 1.481667,-1.48167 z m -1.481667,-1.16416 v 0.34396 c -0.449791,0 -0.820208,0.37041 -0.820208,0.8202 h -0.343958 c 0,-0.635 0.529166,-1.16416 1.164166,-1.16416 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a class="products-item__link products-item__link--line" href="#">
+                                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        sodipodi:docname="products-cart.svg"
+                                        inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg42" version="1.1"
+                                        viewBox="0 0 5.8142452 5.2917099" height="5.2917099mm" width="5.8142452mm">
+                                        <defs id="defs36" />
+                                        <sodipodi:namedview inkscape:window-maximized="1" inkscape:window-y="-8"
+                                            inkscape:window-x="-8" inkscape:window-height="1018"
+                                            inkscape:window-width="1920" showgrid="false" inkscape:document-rotation="0"
+                                            inkscape:current-layer="layer1" inkscape:document-units="mm"
+                                            inkscape:cy="10.082299" inkscape:cx="-5.8685859" inkscape:zoom="22.4"
+                                            inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0"
+                                            bordercolor="#666666" pagecolor="#ffffff" id="base" />
+                                        <metadata id="metadata39">
+                                            <rdf:RDF>
+                                                <cc:Work rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <g transform="translate(-130.14051,-284.61607)" id="layer1"
+                                            inkscape:groupmode="layer" inkscape:label="Слой 1">
+                                            <path style="fill:#a3bbc7;stroke-width:0.264583;fill-opacity:1" id="Forma 1"
+                                                class="s3"
+                                                d="m 130.14051,284.82774 c 0,-0.10584 0.10583,-0.21167 0.21167,-0.21167 h 0.79375 c 0.0794,0 0.15875,0.0529 0.1852,0.15875 l 0.89959,3.175 h 2.38125 l 0.79375,-1.82562 h -2.64584 c -0.10583,0 -0.21166,-0.10584 -0.21166,-0.21167 0,-0.13229 0.10583,-0.21167 0.21166,-0.21167 h 2.9898 c 0.0794,0 0.13229,0.0265 0.1852,0.0794 0.0265,0.0794 0.0265,0.15875 0,0.21166 l -0.97895,2.27542 c -0.0265,0.0794 -0.10584,0.13229 -0.18521,0.13229 h -2.69875 c -0.10584,0 -0.18521,-0.0794 -0.21167,-0.15875 l -0.89958,-3.20146 h -0.60854 c -0.10584,0 -0.21167,-0.0794 -0.21167,-0.21166 z m 1.21708,4.60375 c 0,-0.29104 0.23813,-0.50271 0.50271,-0.50271 0.26458,0 0.47625,0.21167 0.47625,0.50271 0,0.26458 -0.21167,0.47625 -0.47625,0.47625 -0.26458,0 -0.50271,-0.21167 -0.50271,-0.47625 z m 3.06917,0.0265 c -0.0265,-0.26459 0.18521,-0.50271 0.44979,-0.52917 0.26458,-0.0265 0.50271,0.18521 0.52917,0.44979 0,0.13229 -0.0529,0.26458 -0.13229,0.37042 -0.0794,0.0794 -0.21167,0.15875 -0.34396,0.15875 q 0,0 -0.0265,0 c -0.23813,0 -0.44979,-0.21167 -0.47625,-0.44979 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a class="products-item__link" href="#">
+                                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        sodipodi:docname="products-wishlist.svg"
+                                        inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg911" version="1.1"
+                                        viewBox="0 0 5.8273406 4.7625399" height="4.7625399mm" width="5.8273406mm">
+                                        <defs id="defs905" />
+                                        <sodipodi:namedview inkscape:window-maximized="0" inkscape:window-y="35"
+                                            inkscape:window-x="225" inkscape:window-height="967"
+                                            inkscape:window-width="1513" showgrid="false" inkscape:document-rotation="0"
+                                            inkscape:current-layer="layer1" inkscape:document-units="mm"
+                                            inkscape:cy="8.3138901" inkscape:cx="10.584805" inkscape:zoom="11.2"
+                                            inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0"
+                                            bordercolor="#666666" pagecolor="#ffffff" id="base" />
+                                        <metadata id="metadata908">
+                                            <rdf:RDF>
+                                                <cc:Work rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <g transform="translate(-97.628011,-103.45204)" id="layer1"
+                                            inkscape:groupmode="layer" inkscape:label="Слой 1">
+                                            <path style="fill:#a3bbc8;stroke-width:0.264583" id="path19"
+                                                fill-rule="evenodd" class="s4"
+                                                d="m 103.10883,106.15083 c -0.21167,0.34396 -0.82021,0.87313 -1.24354,1.24355 -0.44979,0.37041 -1.05834,0.8202 -1.32292,0.8202 -0.26458,0 -0.873124,-0.44979 -1.322916,-0.8202 -0.423333,-0.37042 -1.031875,-0.89959 -1.243542,-1.24355 -0.264583,-0.39687 -0.370416,-0.74083 -0.343958,-1.16416 0.02646,-0.39688 0.185208,-0.79375 0.502708,-1.08479 0.291042,-0.29105 0.687917,-0.4498 1.084792,-0.4498 0.661458,0 1.084796,0.50271 1.296456,0.74084 q 0.0265,0.0264 0.0265,0.0264 0.0265,-0.0264 0.0529,-0.0529 c 0.23812,-0.23813 0.66146,-0.71438 1.27,-0.71438 0.39687,0 0.79375,0.15875 1.08479,0.4498 0.3175,0.29104 0.47625,0.68791 0.50271,1.08479 0.0265,0.52916 -0.15875,0.89958 -0.34396,1.16416 z m -0.29104,-0.21166 c -0.15875,0.26458 -0.635,0.74083 -1.16417,1.16416 -0.635,0.55563 -1.00542,0.74084 -1.11125,0.7673 -0.0794,-0.0265 -0.47625,-0.23813 -1.111249,-0.7673 -0.529167,-0.44979 -1.005417,-0.89958 -1.164167,-1.16416 -0.211667,-0.3175 -0.291042,-0.60854 -0.291042,-0.92604 0.05292,-0.66146 0.608542,-1.21709 1.243542,-1.21709 0.502708,0 0.846666,0.42334 1.031876,0.635 0.13229,0.13229 0.18521,0.18521 0.29104,0.18521 0.10583,0 0.18521,-0.0529 0.3175,-0.21167 0.18521,-0.21166 0.55563,-0.60854 1.00542,-0.60854 0.635,0 1.19062,0.55563 1.24354,1.21709 0,0.3175 -0.0794,0.60854 -0.29104,0.92604 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="products-item__info">
+                            <h4 class="products-item__name">Wooden radio</h4>
+                            <p class="products-item__price">$29.00</p>
+                        </div>
+                    </div>
+                    <div class="products-item mix category-b">
+                        <div class="products-item__img-box">
+                            <img class="products-item__img" src="images/products/6.png" alt="product image">
+                            <div class="products-item__link-box">
+                                <a class="products-item__link" href="#">
+                                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        sodipodi:docname="products-search.svg"
+                                        inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg888" version="1.1"
+                                        viewBox="0 0 5.2982817 5.2916651" height="5.2916651mm" width="5.2982817mm">
+                                        <defs id="defs882" />
+                                        <sodipodi:namedview inkscape:window-maximized="0" inkscape:window-y="35"
+                                            inkscape:window-x="200" inkscape:window-height="967"
+                                            inkscape:window-width="1513" showgrid="false" inkscape:document-rotation="0"
+                                            inkscape:current-layer="layer1" inkscape:document-units="mm"
+                                            inkscape:cy="13.252319" inkscape:cx="29.835483" inkscape:zoom="11.2"
+                                            inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0"
+                                            bordercolor="#666666" pagecolor="#ffffff" id="base" />
+                                        <metadata id="metadata885">
+                                            <rdf:RDF>
+                                                <cc:Work rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <g transform="translate(-57.071097,-109.23512)" id="layer1"
+                                            inkscape:groupmode="layer" inkscape:label="Слой 1">
+                                            <path style="fill:#a3bbc8;stroke-width:0.264583" id="path17"
+                                                fill-rule="evenodd" class="s4"
+                                                d="m 62.230472,114.36804 c -0.211666,0.21166 -0.529166,0.21166 -0.714375,0 l -1.217083,-1.19063 c 0.291042,-0.18521 0.529167,-0.42333 0.714375,-0.71437 l 1.217083,1.21708 c 0.185209,0.18521 0.185209,0.50271 0,0.68792 z m -3.175,-1.16417 c -1.084791,0 -1.984375,-0.89958 -1.984375,-1.98438 0,-1.08479 0.899584,-1.98437 1.984375,-1.98437 1.084792,0 1.984375,0.89958 1.984375,1.98437 0,1.0848 -0.899583,1.98438 -1.984375,1.98438 z m 1.481667,-1.98438 c 0,-0.8202 -0.661458,-1.48166 -1.481667,-1.48166 -0.820208,0 -1.481666,0.66146 -1.481666,1.48166 0,0.82021 0.661458,1.48167 1.481666,1.48167 0.820209,0 1.481667,-0.66146 1.481667,-1.48167 z m -1.481667,-1.16416 v 0.34396 c -0.449791,0 -0.820208,0.37041 -0.820208,0.8202 h -0.343958 c 0,-0.635 0.529166,-1.16416 1.164166,-1.16416 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a class="products-item__link products-item__link--line" href="#">
+                                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        sodipodi:docname="products-cart.svg"
+                                        inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg42" version="1.1"
+                                        viewBox="0 0 5.8142452 5.2917099" height="5.2917099mm" width="5.8142452mm">
+                                        <defs id="defs36" />
+                                        <sodipodi:namedview inkscape:window-maximized="1" inkscape:window-y="-8"
+                                            inkscape:window-x="-8" inkscape:window-height="1018"
+                                            inkscape:window-width="1920" showgrid="false" inkscape:document-rotation="0"
+                                            inkscape:current-layer="layer1" inkscape:document-units="mm"
+                                            inkscape:cy="10.082299" inkscape:cx="-5.8685859" inkscape:zoom="22.4"
+                                            inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0"
+                                            bordercolor="#666666" pagecolor="#ffffff" id="base" />
+                                        <metadata id="metadata39">
+                                            <rdf:RDF>
+                                                <cc:Work rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <g transform="translate(-130.14051,-284.61607)" id="layer1"
+                                            inkscape:groupmode="layer" inkscape:label="Слой 1">
+                                            <path style="fill:#a3bbc7;stroke-width:0.264583;fill-opacity:1" id="Forma 1"
+                                                class="s3"
+                                                d="m 130.14051,284.82774 c 0,-0.10584 0.10583,-0.21167 0.21167,-0.21167 h 0.79375 c 0.0794,0 0.15875,0.0529 0.1852,0.15875 l 0.89959,3.175 h 2.38125 l 0.79375,-1.82562 h -2.64584 c -0.10583,0 -0.21166,-0.10584 -0.21166,-0.21167 0,-0.13229 0.10583,-0.21167 0.21166,-0.21167 h 2.9898 c 0.0794,0 0.13229,0.0265 0.1852,0.0794 0.0265,0.0794 0.0265,0.15875 0,0.21166 l -0.97895,2.27542 c -0.0265,0.0794 -0.10584,0.13229 -0.18521,0.13229 h -2.69875 c -0.10584,0 -0.18521,-0.0794 -0.21167,-0.15875 l -0.89958,-3.20146 h -0.60854 c -0.10584,0 -0.21167,-0.0794 -0.21167,-0.21166 z m 1.21708,4.60375 c 0,-0.29104 0.23813,-0.50271 0.50271,-0.50271 0.26458,0 0.47625,0.21167 0.47625,0.50271 0,0.26458 -0.21167,0.47625 -0.47625,0.47625 -0.26458,0 -0.50271,-0.21167 -0.50271,-0.47625 z m 3.06917,0.0265 c -0.0265,-0.26459 0.18521,-0.50271 0.44979,-0.52917 0.26458,-0.0265 0.50271,0.18521 0.52917,0.44979 0,0.13229 -0.0529,0.26458 -0.13229,0.37042 -0.0794,0.0794 -0.21167,0.15875 -0.34396,0.15875 q 0,0 -0.0265,0 c -0.23813,0 -0.44979,-0.21167 -0.47625,-0.44979 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a class="products-item__link" href="#">
+                                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        sodipodi:docname="products-wishlist.svg"
+                                        inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg911" version="1.1"
+                                        viewBox="0 0 5.8273406 4.7625399" height="4.7625399mm" width="5.8273406mm">
+                                        <defs id="defs905" />
+                                        <sodipodi:namedview inkscape:window-maximized="0" inkscape:window-y="35"
+                                            inkscape:window-x="225" inkscape:window-height="967"
+                                            inkscape:window-width="1513" showgrid="false" inkscape:document-rotation="0"
+                                            inkscape:current-layer="layer1" inkscape:document-units="mm"
+                                            inkscape:cy="8.3138901" inkscape:cx="10.584805" inkscape:zoom="11.2"
+                                            inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0"
+                                            bordercolor="#666666" pagecolor="#ffffff" id="base" />
+                                        <metadata id="metadata908">
+                                            <rdf:RDF>
+                                                <cc:Work rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <g transform="translate(-97.628011,-103.45204)" id="layer1"
+                                            inkscape:groupmode="layer" inkscape:label="Слой 1">
+                                            <path style="fill:#a3bbc8;stroke-width:0.264583" id="path19"
+                                                fill-rule="evenodd" class="s4"
+                                                d="m 103.10883,106.15083 c -0.21167,0.34396 -0.82021,0.87313 -1.24354,1.24355 -0.44979,0.37041 -1.05834,0.8202 -1.32292,0.8202 -0.26458,0 -0.873124,-0.44979 -1.322916,-0.8202 -0.423333,-0.37042 -1.031875,-0.89959 -1.243542,-1.24355 -0.264583,-0.39687 -0.370416,-0.74083 -0.343958,-1.16416 0.02646,-0.39688 0.185208,-0.79375 0.502708,-1.08479 0.291042,-0.29105 0.687917,-0.4498 1.084792,-0.4498 0.661458,0 1.084796,0.50271 1.296456,0.74084 q 0.0265,0.0264 0.0265,0.0264 0.0265,-0.0264 0.0529,-0.0529 c 0.23812,-0.23813 0.66146,-0.71438 1.27,-0.71438 0.39687,0 0.79375,0.15875 1.08479,0.4498 0.3175,0.29104 0.47625,0.68791 0.50271,1.08479 0.0265,0.52916 -0.15875,0.89958 -0.34396,1.16416 z m -0.29104,-0.21166 c -0.15875,0.26458 -0.635,0.74083 -1.16417,1.16416 -0.635,0.55563 -1.00542,0.74084 -1.11125,0.7673 -0.0794,-0.0265 -0.47625,-0.23813 -1.111249,-0.7673 -0.529167,-0.44979 -1.005417,-0.89958 -1.164167,-1.16416 -0.211667,-0.3175 -0.291042,-0.60854 -0.291042,-0.92604 0.05292,-0.66146 0.608542,-1.21709 1.243542,-1.21709 0.502708,0 0.846666,0.42334 1.031876,0.635 0.13229,0.13229 0.18521,0.18521 0.29104,0.18521 0.10583,0 0.18521,-0.0529 0.3175,-0.21167 0.18521,-0.21166 0.55563,-0.60854 1.00542,-0.60854 0.635,0 1.19062,0.55563 1.24354,1.21709 0,0.3175 -0.0794,0.60854 -0.29104,0.92604 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="products-item__info">
+                            <h4 class="products-item__name">Wooden chair</h4>
+                            <p class="products-item__price">$29.00</p>
+                        </div>
+                    </div>
+                    <div class="products-item mix category-b">
+                        <div class="products-item__img-box">
+                            <img class="products-item__img" src="images/products/7.png" alt="product image">
+                            <div class="products-item__link-box">
+                                <a class="products-item__link" href="#">
+                                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        sodipodi:docname="products-search.svg"
+                                        inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg888" version="1.1"
+                                        viewBox="0 0 5.2982817 5.2916651" height="5.2916651mm" width="5.2982817mm">
+                                        <defs id="defs882" />
+                                        <sodipodi:namedview inkscape:window-maximized="0" inkscape:window-y="35"
+                                            inkscape:window-x="200" inkscape:window-height="967"
+                                            inkscape:window-width="1513" showgrid="false" inkscape:document-rotation="0"
+                                            inkscape:current-layer="layer1" inkscape:document-units="mm"
+                                            inkscape:cy="13.252319" inkscape:cx="29.835483" inkscape:zoom="11.2"
+                                            inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0"
+                                            bordercolor="#666666" pagecolor="#ffffff" id="base" />
+                                        <metadata id="metadata885">
+                                            <rdf:RDF>
+                                                <cc:Work rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <g transform="translate(-57.071097,-109.23512)" id="layer1"
+                                            inkscape:groupmode="layer" inkscape:label="Слой 1">
+                                            <path style="fill:#a3bbc8;stroke-width:0.264583" id="path17"
+                                                fill-rule="evenodd" class="s4"
+                                                d="m 62.230472,114.36804 c -0.211666,0.21166 -0.529166,0.21166 -0.714375,0 l -1.217083,-1.19063 c 0.291042,-0.18521 0.529167,-0.42333 0.714375,-0.71437 l 1.217083,1.21708 c 0.185209,0.18521 0.185209,0.50271 0,0.68792 z m -3.175,-1.16417 c -1.084791,0 -1.984375,-0.89958 -1.984375,-1.98438 0,-1.08479 0.899584,-1.98437 1.984375,-1.98437 1.084792,0 1.984375,0.89958 1.984375,1.98437 0,1.0848 -0.899583,1.98438 -1.984375,1.98438 z m 1.481667,-1.98438 c 0,-0.8202 -0.661458,-1.48166 -1.481667,-1.48166 -0.820208,0 -1.481666,0.66146 -1.481666,1.48166 0,0.82021 0.661458,1.48167 1.481666,1.48167 0.820209,0 1.481667,-0.66146 1.481667,-1.48167 z m -1.481667,-1.16416 v 0.34396 c -0.449791,0 -0.820208,0.37041 -0.820208,0.8202 h -0.343958 c 0,-0.635 0.529166,-1.16416 1.164166,-1.16416 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a class="products-item__link products-item__link--line" href="#">
+                                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        sodipodi:docname="products-cart.svg"
+                                        inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg42" version="1.1"
+                                        viewBox="0 0 5.8142452 5.2917099" height="5.2917099mm" width="5.8142452mm">
+                                        <defs id="defs36" />
+                                        <sodipodi:namedview inkscape:window-maximized="1" inkscape:window-y="-8"
+                                            inkscape:window-x="-8" inkscape:window-height="1018"
+                                            inkscape:window-width="1920" showgrid="false" inkscape:document-rotation="0"
+                                            inkscape:current-layer="layer1" inkscape:document-units="mm"
+                                            inkscape:cy="10.082299" inkscape:cx="-5.8685859" inkscape:zoom="22.4"
+                                            inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0"
+                                            bordercolor="#666666" pagecolor="#ffffff" id="base" />
+                                        <metadata id="metadata39">
+                                            <rdf:RDF>
+                                                <cc:Work rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <g transform="translate(-130.14051,-284.61607)" id="layer1"
+                                            inkscape:groupmode="layer" inkscape:label="Слой 1">
+                                            <path style="fill:#a3bbc7;stroke-width:0.264583;fill-opacity:1" id="Forma 1"
+                                                class="s3"
+                                                d="m 130.14051,284.82774 c 0,-0.10584 0.10583,-0.21167 0.21167,-0.21167 h 0.79375 c 0.0794,0 0.15875,0.0529 0.1852,0.15875 l 0.89959,3.175 h 2.38125 l 0.79375,-1.82562 h -2.64584 c -0.10583,0 -0.21166,-0.10584 -0.21166,-0.21167 0,-0.13229 0.10583,-0.21167 0.21166,-0.21167 h 2.9898 c 0.0794,0 0.13229,0.0265 0.1852,0.0794 0.0265,0.0794 0.0265,0.15875 0,0.21166 l -0.97895,2.27542 c -0.0265,0.0794 -0.10584,0.13229 -0.18521,0.13229 h -2.69875 c -0.10584,0 -0.18521,-0.0794 -0.21167,-0.15875 l -0.89958,-3.20146 h -0.60854 c -0.10584,0 -0.21167,-0.0794 -0.21167,-0.21166 z m 1.21708,4.60375 c 0,-0.29104 0.23813,-0.50271 0.50271,-0.50271 0.26458,0 0.47625,0.21167 0.47625,0.50271 0,0.26458 -0.21167,0.47625 -0.47625,0.47625 -0.26458,0 -0.50271,-0.21167 -0.50271,-0.47625 z m 3.06917,0.0265 c -0.0265,-0.26459 0.18521,-0.50271 0.44979,-0.52917 0.26458,-0.0265 0.50271,0.18521 0.52917,0.44979 0,0.13229 -0.0529,0.26458 -0.13229,0.37042 -0.0794,0.0794 -0.21167,0.15875 -0.34396,0.15875 q 0,0 -0.0265,0 c -0.23813,0 -0.44979,-0.21167 -0.47625,-0.44979 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a class="products-item__link" href="#">
+                                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        sodipodi:docname="products-wishlist.svg"
+                                        inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg911" version="1.1"
+                                        viewBox="0 0 5.8273406 4.7625399" height="4.7625399mm" width="5.8273406mm">
+                                        <defs id="defs905" />
+                                        <sodipodi:namedview inkscape:window-maximized="0" inkscape:window-y="35"
+                                            inkscape:window-x="225" inkscape:window-height="967"
+                                            inkscape:window-width="1513" showgrid="false" inkscape:document-rotation="0"
+                                            inkscape:current-layer="layer1" inkscape:document-units="mm"
+                                            inkscape:cy="8.3138901" inkscape:cx="10.584805" inkscape:zoom="11.2"
+                                            inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0"
+                                            bordercolor="#666666" pagecolor="#ffffff" id="base" />
+                                        <metadata id="metadata908">
+                                            <rdf:RDF>
+                                                <cc:Work rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <g transform="translate(-97.628011,-103.45204)" id="layer1"
+                                            inkscape:groupmode="layer" inkscape:label="Слой 1">
+                                            <path style="fill:#a3bbc8;stroke-width:0.264583" id="path19"
+                                                fill-rule="evenodd" class="s4"
+                                                d="m 103.10883,106.15083 c -0.21167,0.34396 -0.82021,0.87313 -1.24354,1.24355 -0.44979,0.37041 -1.05834,0.8202 -1.32292,0.8202 -0.26458,0 -0.873124,-0.44979 -1.322916,-0.8202 -0.423333,-0.37042 -1.031875,-0.89959 -1.243542,-1.24355 -0.264583,-0.39687 -0.370416,-0.74083 -0.343958,-1.16416 0.02646,-0.39688 0.185208,-0.79375 0.502708,-1.08479 0.291042,-0.29105 0.687917,-0.4498 1.084792,-0.4498 0.661458,0 1.084796,0.50271 1.296456,0.74084 q 0.0265,0.0264 0.0265,0.0264 0.0265,-0.0264 0.0529,-0.0529 c 0.23812,-0.23813 0.66146,-0.71438 1.27,-0.71438 0.39687,0 0.79375,0.15875 1.08479,0.4498 0.3175,0.29104 0.47625,0.68791 0.50271,1.08479 0.0265,0.52916 -0.15875,0.89958 -0.34396,1.16416 z m -0.29104,-0.21166 c -0.15875,0.26458 -0.635,0.74083 -1.16417,1.16416 -0.635,0.55563 -1.00542,0.74084 -1.11125,0.7673 -0.0794,-0.0265 -0.47625,-0.23813 -1.111249,-0.7673 -0.529167,-0.44979 -1.005417,-0.89958 -1.164167,-1.16416 -0.211667,-0.3175 -0.291042,-0.60854 -0.291042,-0.92604 0.05292,-0.66146 0.608542,-1.21709 1.243542,-1.21709 0.502708,0 0.846666,0.42334 1.031876,0.635 0.13229,0.13229 0.18521,0.18521 0.29104,0.18521 0.10583,0 0.18521,-0.0529 0.3175,-0.21167 0.18521,-0.21166 0.55563,-0.60854 1.00542,-0.60854 0.635,0 1.19062,0.55563 1.24354,1.21709 0,0.3175 -0.0794,0.60854 -0.29104,0.92604 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="products-item__info">
+                            <h4 class="products-item__name">White chair</h4>
+                            <p class="products-item__price">$29.00</p>
+                        </div>
+                    </div>
+                    <div class="products-item mix category-a">
+                        <div class="products-item__img-box">
+                            <img class="products-item__img" src="images/products/8.png" alt="product image">
+                            <div class="products-item__link-box">
+                                <a class="products-item__link" href="#">
+                                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        sodipodi:docname="products-search.svg"
+                                        inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg888" version="1.1"
+                                        viewBox="0 0 5.2982817 5.2916651" height="5.2916651mm" width="5.2982817mm">
+                                        <defs id="defs882" />
+                                        <sodipodi:namedview inkscape:window-maximized="0" inkscape:window-y="35"
+                                            inkscape:window-x="200" inkscape:window-height="967"
+                                            inkscape:window-width="1513" showgrid="false" inkscape:document-rotation="0"
+                                            inkscape:current-layer="layer1" inkscape:document-units="mm"
+                                            inkscape:cy="13.252319" inkscape:cx="29.835483" inkscape:zoom="11.2"
+                                            inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0"
+                                            bordercolor="#666666" pagecolor="#ffffff" id="base" />
+                                        <metadata id="metadata885">
+                                            <rdf:RDF>
+                                                <cc:Work rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <g transform="translate(-57.071097,-109.23512)" id="layer1"
+                                            inkscape:groupmode="layer" inkscape:label="Слой 1">
+                                            <path style="fill:#a3bbc8;stroke-width:0.264583" id="path17"
+                                                fill-rule="evenodd" class="s4"
+                                                d="m 62.230472,114.36804 c -0.211666,0.21166 -0.529166,0.21166 -0.714375,0 l -1.217083,-1.19063 c 0.291042,-0.18521 0.529167,-0.42333 0.714375,-0.71437 l 1.217083,1.21708 c 0.185209,0.18521 0.185209,0.50271 0,0.68792 z m -3.175,-1.16417 c -1.084791,0 -1.984375,-0.89958 -1.984375,-1.98438 0,-1.08479 0.899584,-1.98437 1.984375,-1.98437 1.084792,0 1.984375,0.89958 1.984375,1.98437 0,1.0848 -0.899583,1.98438 -1.984375,1.98438 z m 1.481667,-1.98438 c 0,-0.8202 -0.661458,-1.48166 -1.481667,-1.48166 -0.820208,0 -1.481666,0.66146 -1.481666,1.48166 0,0.82021 0.661458,1.48167 1.481666,1.48167 0.820209,0 1.481667,-0.66146 1.481667,-1.48167 z m -1.481667,-1.16416 v 0.34396 c -0.449791,0 -0.820208,0.37041 -0.820208,0.8202 h -0.343958 c 0,-0.635 0.529166,-1.16416 1.164166,-1.16416 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a class="products-item__link products-item__link--line" href="#">
+                                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        sodipodi:docname="products-cart.svg"
+                                        inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg42" version="1.1"
+                                        viewBox="0 0 5.8142452 5.2917099" height="5.2917099mm" width="5.8142452mm">
+                                        <defs id="defs36" />
+                                        <sodipodi:namedview inkscape:window-maximized="1" inkscape:window-y="-8"
+                                            inkscape:window-x="-8" inkscape:window-height="1018"
+                                            inkscape:window-width="1920" showgrid="false" inkscape:document-rotation="0"
+                                            inkscape:current-layer="layer1" inkscape:document-units="mm"
+                                            inkscape:cy="10.082299" inkscape:cx="-5.8685859" inkscape:zoom="22.4"
+                                            inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0"
+                                            bordercolor="#666666" pagecolor="#ffffff" id="base" />
+                                        <metadata id="metadata39">
+                                            <rdf:RDF>
+                                                <cc:Work rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <g transform="translate(-130.14051,-284.61607)" id="layer1"
+                                            inkscape:groupmode="layer" inkscape:label="Слой 1">
+                                            <path style="fill:#a3bbc7;stroke-width:0.264583;fill-opacity:1" id="Forma 1"
+                                                class="s3"
+                                                d="m 130.14051,284.82774 c 0,-0.10584 0.10583,-0.21167 0.21167,-0.21167 h 0.79375 c 0.0794,0 0.15875,0.0529 0.1852,0.15875 l 0.89959,3.175 h 2.38125 l 0.79375,-1.82562 h -2.64584 c -0.10583,0 -0.21166,-0.10584 -0.21166,-0.21167 0,-0.13229 0.10583,-0.21167 0.21166,-0.21167 h 2.9898 c 0.0794,0 0.13229,0.0265 0.1852,0.0794 0.0265,0.0794 0.0265,0.15875 0,0.21166 l -0.97895,2.27542 c -0.0265,0.0794 -0.10584,0.13229 -0.18521,0.13229 h -2.69875 c -0.10584,0 -0.18521,-0.0794 -0.21167,-0.15875 l -0.89958,-3.20146 h -0.60854 c -0.10584,0 -0.21167,-0.0794 -0.21167,-0.21166 z m 1.21708,4.60375 c 0,-0.29104 0.23813,-0.50271 0.50271,-0.50271 0.26458,0 0.47625,0.21167 0.47625,0.50271 0,0.26458 -0.21167,0.47625 -0.47625,0.47625 -0.26458,0 -0.50271,-0.21167 -0.50271,-0.47625 z m 3.06917,0.0265 c -0.0265,-0.26459 0.18521,-0.50271 0.44979,-0.52917 0.26458,-0.0265 0.50271,0.18521 0.52917,0.44979 0,0.13229 -0.0529,0.26458 -0.13229,0.37042 -0.0794,0.0794 -0.21167,0.15875 -0.34396,0.15875 q 0,0 -0.0265,0 c -0.23813,0 -0.44979,-0.21167 -0.47625,-0.44979 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a class="products-item__link" href="#">
+                                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        sodipodi:docname="products-wishlist.svg"
+                                        inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg911" version="1.1"
+                                        viewBox="0 0 5.8273406 4.7625399" height="4.7625399mm" width="5.8273406mm">
+                                        <defs id="defs905" />
+                                        <sodipodi:namedview inkscape:window-maximized="0" inkscape:window-y="35"
+                                            inkscape:window-x="225" inkscape:window-height="967"
+                                            inkscape:window-width="1513" showgrid="false" inkscape:document-rotation="0"
+                                            inkscape:current-layer="layer1" inkscape:document-units="mm"
+                                            inkscape:cy="8.3138901" inkscape:cx="10.584805" inkscape:zoom="11.2"
+                                            inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0"
+                                            bordercolor="#666666" pagecolor="#ffffff" id="base" />
+                                        <metadata id="metadata908">
+                                            <rdf:RDF>
+                                                <cc:Work rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <g transform="translate(-97.628011,-103.45204)" id="layer1"
+                                            inkscape:groupmode="layer" inkscape:label="Слой 1">
+                                            <path style="fill:#a3bbc8;stroke-width:0.264583" id="path19"
+                                                fill-rule="evenodd" class="s4"
+                                                d="m 103.10883,106.15083 c -0.21167,0.34396 -0.82021,0.87313 -1.24354,1.24355 -0.44979,0.37041 -1.05834,0.8202 -1.32292,0.8202 -0.26458,0 -0.873124,-0.44979 -1.322916,-0.8202 -0.423333,-0.37042 -1.031875,-0.89959 -1.243542,-1.24355 -0.264583,-0.39687 -0.370416,-0.74083 -0.343958,-1.16416 0.02646,-0.39688 0.185208,-0.79375 0.502708,-1.08479 0.291042,-0.29105 0.687917,-0.4498 1.084792,-0.4498 0.661458,0 1.084796,0.50271 1.296456,0.74084 q 0.0265,0.0264 0.0265,0.0264 0.0265,-0.0264 0.0529,-0.0529 c 0.23812,-0.23813 0.66146,-0.71438 1.27,-0.71438 0.39687,0 0.79375,0.15875 1.08479,0.4498 0.3175,0.29104 0.47625,0.68791 0.50271,1.08479 0.0265,0.52916 -0.15875,0.89958 -0.34396,1.16416 z m -0.29104,-0.21166 c -0.15875,0.26458 -0.635,0.74083 -1.16417,1.16416 -0.635,0.55563 -1.00542,0.74084 -1.11125,0.7673 -0.0794,-0.0265 -0.47625,-0.23813 -1.111249,-0.7673 -0.529167,-0.44979 -1.005417,-0.89958 -1.164167,-1.16416 -0.211667,-0.3175 -0.291042,-0.60854 -0.291042,-0.92604 0.05292,-0.66146 0.608542,-1.21709 1.243542,-1.21709 0.502708,0 0.846666,0.42334 1.031876,0.635 0.13229,0.13229 0.18521,0.18521 0.29104,0.18521 0.10583,0 0.18521,-0.0529 0.3175,-0.21167 0.18521,-0.21166 0.55563,-0.60854 1.00542,-0.60854 0.635,0 1.19062,0.55563 1.24354,1.21709 0,0.3175 -0.0794,0.60854 -0.29104,0.92604 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="products-item__info">
+                            <h4 class="products-item__name">Retro table</h4>
+                            <p class="products-item__price">$29.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products-bottom">
+                <div class="products-bottom__item">
+                    <img class="products-bottom__img" src="images/mirum.png" alt="products bottom image">
+                    <div class="products-bottom__info">
+                        <h4 class="products-bottom__title">Mirum Notare Tellus</h4>
+                        <p class="products-bottom__prop">LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight</p>
+                        <a class="products-bottom__link" href="#">View More<img class="link-btn-arrow"
+                                src="images/icons/link-btn-arrow.svg" alt="link button arrow"></a>
+                    </div>
+                </div>
+                <div class="products-bottom__item">
+                    <img class="products-bottom__img" src="images/males.png" alt="products bottom image">
+                    <div class="products-bottom__info">
+                        <h4 class="products-bottom__title">Malesuada Tempor Euismod</h4>
+                        <p class="products-bottom__prop">50W 8000lm Compact Size for HID
+                            StreetLightReplacementLEDCornLight</p>
+                        <a class="products-bottom__link" href="#">View More<img class="link-btn-arrow"
+                                src="images/icons/link-btn-arrow.svg" alt="link button arrow"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="new-design">
+            <div class="container">
+                <div class="new-design__top">
+                    <h2 class="title new-design__title">New Design</h2>
+                    <div class="mixfilter new-design__filter">
+                        <button class="mixfilter__btn new-design__btn" data-filter="all">All</button>
+                        <button class="mixfilter__btn new-design__btn" data-filter=".category-a">Furnitures</button>
+                        <button class="mixfilter__btn new-design__btn" data-filter=".category-b">Chairs</button>
+                        <button class="mixfilter__btn new-design__btn" data-filter=".category-c">Lighting</button>
+                        <button class="mixfilter__btn new-design__btn" data-filter=".category-d">Decor</button>
+                    </div>
+                </div>
+                <div class="new-design__content">
+                    <div class="new-design-item mix category-a">
+                        <h4 class="new-design-item__name">Beat Flat Pendant Black</h4>
+                        <h5 class="new-design-item__style">Classic</h5>
+                        <img class="new-design-item__img" src="images/new-design/1.png" alt="new-design image">
+                    </div>
+                    <div class="new-design-item mix category-a">
+                        <h4 class="new-design-item__name">Lampe Sur Pieds Bamboo</h4>
+                        <h5 class="new-design-item__style">Classic</h5>
+                        <img class="new-design-item__img" src="images/new-design/2.png" alt="new-design image">
+                    </div>
+                    <div class="new-design-item mix category-b">
+                        <h4 class="new-design-item__name">Rattan Rocking Chair</h4>
+                        <h5 class="new-design-item__style">Classic</h5>
+                        <img class="new-design-item__img" src="images/new-design/3.png" alt="new-design image">
+                    </div>
+                    <div class="new-design-item mix category-a">
+                        <h4 class="new-design-item__name">Rattan Rocking Chair</h4>
+                        <h5 class="new-design-item__style">Classic</h5>
+                        <img class="new-design-item__img" src="images/new-design/4.png" alt="new-design image">
+                    </div>
+                    <div class="new-design-item mix category-b">
+                        <h4 class="new-design-item__name">Rattan Rocking Chair</h4>
+                        <h5 class="new-design-item__style">Classic</h5>
+                        <img class="new-design-item__img" src="images/new-design/5.png" alt="new-design image">
+                    </div>
+                    <div class="new-design-item mix category-a">
+                        <h4 class="new-design-item__name">Lampe Sur Pieds Bamboo</h4>
+                        <h5 class="new-design-item__style">Classic</h5>
+                        <img class="new-design-item__img" src="images/new-design/6.png" alt="new-design image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="video">
+            <a data-fancybox class="video__link" href="https://youtu.be/9TDbOnfYgEk">
+                <img class="video__btn" src="images/icons/play.svg" alt="play icon">
+            </a>
+        </div>
+
+    </main>
 
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="blog">
+            <div class="container">
+                <div class="blog__top">
+                    <h2 class="title blog__title">Our Insights & Articles</h2>
+                    <div class="blog__link-inner">
+                        <a class="blog__link" href="blog.html">
+                            View All
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
+                                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                inkscape:version="1.0 (4035a4fb49, 2020-05-01)" sodipodi:docname="Shape 21.svg"
+                                id="svg7" height="10.989339" width="6.0999999" viewBox="0 0 6.0999999 10.989339"
+                                version="1.2">
+                                <metadata id="metadata13">
+                                    <rdf:RDF>
+                                        <cc:Work rdf:about="">
+                                            <dc:format>image/svg+xml</dc:format>
+                                            <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                        </cc:Work>
+                                    </rdf:RDF>
+                                </metadata>
+                                <defs id="defs11" />
+                                <sodipodi:namedview inkscape:current-layer="svg7" inkscape:window-maximized="1"
+                                    inkscape:window-y="-8" inkscape:window-x="-8" inkscape:cy="6.7696044"
+                                    inkscape:cx="5.553552" inkscape:zoom="48.531538" showgrid="false" id="namedview9"
+                                    inkscape:window-height="1018" inkscape:window-width="1920" inkscape:pageshadow="2"
+                                    inkscape:pageopacity="0" guidetolerance="10" gridtolerance="10" objecttolerance="10"
+                                    borderopacity="1" bordercolor="#666666" pagecolor="#ffffff" />
+                                <title id="title2">Shape 21</title>
+                                <style>
+                                    .s0 {
+                                        fill: #262626;
+                                    }
+                                </style>
+                                <path
+                                    d="m 0.5,10.989339 q -0.2,0 -0.4,-0.2 -0.1,-0.2 -0.1,-0.4 0,-0.2 0.1,-0.3999999 l 4.6,-4.5 -4.6,-4.50000001 q -0.1,-0.2 -0.1,-0.4 0,-0.2 0.1,-0.4 c 0.2,-0.2 0.6,-0.3 0.8,0 l 5,4.90000001 q 0,0 0,0 0.1,0.1 0.1,0.2 0,0 0,0 0.1,0.1 0.1,0.2 0,0 0,0 0,0.1 -0.1,0.2 0,0 0,0 0,0 0,0 0,0 0,0 0,0.1 -0.1,0.2 0,0 0,0 l -5,4.8999999 q -0.1,0.2 -0.4,0.2 z"
+                                    class="s0" id="Shape 21" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog__items">
+                    <div class="blog__item">
+                        <a class="blog__item-imglink" href="#">
+                            <img class="blog__item-img" src="images/homepage-blog/1.png" alt="blog img">
+                        </a>
+                        <div class="blog__item-type">NEWS</div>
+                        <div class="blog__item-info">
+                            <h4 class="blog__item-title">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam</h4>
+                            <div class="blog__item-date">28 JANUARY, 2020</div>
+                            <a class="blog__item-author" href="#">BY ADMIN</a>
+                        </div>
+                    </div>
+                    <div class="blog__item">
+                        <a class="blog__item-imglink" href="#">
+                            <img class="blog__item-img" src="images/homepage-blog/2.png" alt="blog img">
+                        </a>
+                        <div class="blog__item-type">NEWS</div>
+                        <div class="blog__item-info">
+                            <h4 class="blog__item-title">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore</h4>
+                            <div class="blog__item-date">28 JANUARY, 2020</div>
+                            <a class="blog__item-author" href="#">BY ADMIN</a>
+                        </div>
+                    </div>
+                    <div class="blog__item">
+                        <a class="blog__item-imglink" href="#">
+                            <img class="blog__item-img" src="images/homepage-blog/3.png" alt="blog img">
+                        </a>
+                        <div class="blog__item-type">NEWS</div>
+                        <div class="blog__item-info">
+                            <h4 class="blog__item-title">Rncididunt ut labore et dolore magna aliqua. Ut enim</h4>
+                            <div class="blog__item-date">28 JANUARY, 2020</div>
+                            <a class="blog__item-author" href="#">BY ADMIN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__partners">
+            <div class="container">
+                <ul class="footer__partners-list">
+                    <li class="footer__partners-item">
+                        <a class="footer__partners-link" href="#">
+                            <img class="footer__partners-logo" src="images/icons/partners/peterson.png"
+                                alt="partner logo">
+                        </a>
+                    </li>
+                    <li class="footer__partners-item">
+                        <a class="footer__partners-link" href="#">
+                            <img class="footer__partners-logo" src="images/icons/partners/kmn.png" alt="partner logo">
+                        </a>
+                    </li>
+                    <li class="footer__partners-item">
+                        <a class="footer__partners-link" href="#">
+                            <img class="footer__partners-logo" src="images/icons/partners/chainforce.png"
+                                alt="partner logo">
+                        </a>
+                    </li>
+                    <li class="footer__partners-item">
+                        <a class="footer__partners-link" href="#">
+                            <img class="footer__partners-logo" src="images/icons/partners/next.png" alt="partner logo">
+                        </a>
+                    </li>
+                    <li class="footer__partners-item">
+                        <a class="footer__partners-link" href="#">
+                            <img class="footer__partners-logo" src="images/icons/partners/vintage.png"
+                                alt="partner logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__top-item footer__top-contact">
+                    <a class="logo footer__top-logo" href="#">
+                        <img class="logo-img" src="images/icons/logo.svg" alt="logo">
+                    </a>
+                    <a class="footer__top-address" href="#">
+                        ADDRESS: 4772 Wines Lane
+                        Houston, TX 77032
+                    </a>
+                    <a class="footer__top-phone" href="tel:+8323475843">TELEPHONE: +832-347-5843</a>
+                    <a class="footer__top-email" href="mailto:contact@Glee.com">EMAIL: contact@Glee.com</a>
+
+                </div>
+                <div class="footer__top-item footer__top-nav">
+                    <h6 class="footer__top-title">SERVICES</h6>
+                    <ul class="footer__top-list">
+                        <li class="footer__top-list-item">
+                            <a class="footer__top-link" href="about.html">About us</a>
+                        </li>
+                        <li class="footer__top-list-item">
+                            <a class="footer__top-link" href="#">Return Policy</a>
+                        </li>
+                        <li class="footer__top-list-item">
+                            <a class="footer__top-link" href="blog.html">Our Blog</a>
+                        </li>
+                        <li class="footer__top-list-item">
+                            <a class="footer__top-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="footer__top-list-item">
+                            <a class="footer__top-link" href="terms-conditions.html">Terms & Condition</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__top-item footer__top-nav">
+                    <h6 class="footer__top-title">ACCOUNT</h6>
+                    <ul class="footer__top-list">
+                        <li class="footer__top-list-item">
+                            <a class="footer__top-link" href="#">Your Account</a>
+                        </li>
+                        <li class="footer__top-list-item">
+                            <a class="footer__top-link" href="#">Checkout</a>
+                        </li>
+                        <li class="footer__top-list-item">
+                            <a class="footer__top-link" href="login.html">Login</a>
+                        </li>
+                        <li class="footer__top-list-item">
+                            <a class="footer__top-link" href="#">Register</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__top-item footer__top-subscribe">
+                    <h6 class="footer__top-title">NEWSLETTER</h6>
+                    <p class="footer__top-text">
+                        Subscribe by our newsletter and get update protidin.
+                    </p>
+                    <form class="footer__top-form" action="#">
+                        <input class="footer__top-input" type="email" placeholder="Email address" required>
+                        <button class="footer__top-btn" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy-text">
+                    ©2020 CopyRight Example. All rights reserved.
+                </p>
+                <ul class="footer__bottom-menu">
+                    <li class="footer__bottom-item">
+                        <a class="footer__bottom-link" href="index.html">Home</a>
+                    </li>
+                    <li class="footer__bottom-item">
+                        <a class="footer__bottom-link" href="about.html">About</a>
+                    </li>
+                    <li class="footer__bottom-item">
+                        <a class="footer__bottom-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="footer__bottom-item">
+                        <a class="footer__bottom-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </footer>
+
 
     <script src="js/main.min.js"></script>
 </body>
+
 </html>

@@ -1,15 +1,103 @@
 html,
-body{
+body {
     height: 100%;
 }
 
-.main{
+body {
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $default;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
     flex-grow: 1;
 }
 
-.container{
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
+a {
+    color: $default;
+}
+
+.title {
+    @extend %dmsans-700;
+    text-align: center;
+    font-size: 36px;
+    color: #191919;
+}
+
+.breadcrumbs {
+    display: inline-flex;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        color: #737980;
+
+        &::after {
+            content: "/";
+            padding: 0 5px;
+        }
+
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    &__link {
+        color: inherit;
+    }
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 15px;
+    }
+
+    &__link {
+        display: block;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #a3bbc8;
+        text-align: center;
+        padding: 14.5px 0 14.5px 0;
+        font-size: 16px;
+        line-height: 1;
+        color: #243f4d;
+    }
+
+    &__link--active {
+        background-color: #a3bbc8;
+        color: #f9fafb;
+    }
+
+    &__next {
+        width: 74px;
+        height: 50px;
+        border: 1px solid #a3bbc8;
+        text-align: center;
+        padding: 14.5px 0 14.5px 0;
+        font-size: 16px;
+        line-height: 1;
+        color: #243f4d;
+    }
+}
